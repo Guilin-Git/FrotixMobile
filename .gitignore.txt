@@ -1,0 +1,39 @@
+# Ignore arquivos do Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore arquivos de build e binários
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Ignore arquivos de cache e configurações locais
+*.cache
+*.config
+*.log
+*.tlog
+
+# Ignore arquivos de log do Visual Studio
+*.log
+
+# Ignore arquivos gerados pelo MAUI
+AppPackages/
+BundleArtifacts/
+
+# Ignore arquivos do MacOS (se estiver rodando no Mac)
+.DS_Store
+
+# Ignore arquivos do Windows
+Thumbs.db
+
+# Ignore arquivos temporários
+*.tmp
+*.bak
+
+# Ignore configurações do Rider e JetBrains (se usar)
+.idea/
+*.iml

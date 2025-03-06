@@ -1,0 +1,499 @@
+﻿@page "/vistoria"
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.DropDowns
+@using Syncfusion.Blazor.Data
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Calendars
+@using Syncfusion.Blazor.Buttons
+@using Microsoft.Maui.Media
+@using System.Text.Json
+@using System.IO
+
+<PageTitle>Vistoria</PageTitle>
+
+<div class="inspection-form">
+    <!-- Título Principal -->
+    <h1>FICHA DE VISTORIA DE VEÍCULOS</h1>
+
+    <!-- Seção 1: Dados principais -->
+    <div class="section">
+        <div class="form-row">
+            <label>Placa do Veículo:</label>
+            <SfComboBox TValue="string" TItem="PlacaFields" Placeholder="Selecione a Placa" DataSource="@Placas">
+                <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
+            </SfComboBox>
+        </div>
+        <div class="form-row">
+            <label>Motorista:</label>
+            <SfComboBox TValue="string" TItem="MotoristaFields" Placeholder="Selecione o Motorista" DataSource="@Motoristas">
+                <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
+            </SfComboBox>
+        </div>
+        <div class="form-row">
+            <label>Número da ficha:</label>
+            <SfNumericTextBox TValue="int?"></SfNumericTextBox>
+        </div>
+    </div>
+
+    <!-- Seção: Vistoria inicial -->
+    <div class="section-title">VISTORIA INICIAL</div>
+    <div class="section">
+        <div class="form-row">
+            <label>Data/hora:</label>
+            <SfDateTimePicker TValue="DateTime?" Placeholder="Selecione a data/hora"
+                              Min="@min" Max="@max" EnableMask="true">
+            </SfDateTimePicker>
+        </div>
+        <div class="form-row">
+            <label>CRLV:</label>
+            <SfCheckBox @bind-Checked="@clrv" Label=" "></SfCheckBox>
+            <label>Cartão de abastecimento:</label>
+            <SfCheckBox @bind-Checked="@cda" Label=" "></SfCheckBox>
+        </div>
+        <div class="form-row">
+            <label>Nível de combustível:</label>
+            <div class="fuel-radios">
+                <SfRadioButton Label="Cheio" Name="combustivelInicial" Checked=false></SfRadioButton>
+                <SfRadioButton Label="3/4" Name="combustivelInicial" Checked=false></SfRadioButton>
+                <SfRadioButton Label="2/4" Name="combustivelInicial" Checked=false></SfRadioButton>
+                <SfRadioButton Label="1/4" Name="combustivelInicial" Checked=false></SfRadioButton>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção: Tabela de Setor Solicitante, Nome, etc. -->
+    <div class="section">
+        <table class="request-table">
+            <thead>
+                <tr>
+                    <th>Setor Solicitante</th>
+                    <th>Nome</th>
+                    <th>Ramal</th>
+                    <th>KM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <SfTextBox Placeholder="Setor Solicitante..."></SfTextBox>
+                    </td>
+                    <td>
+                        <SfTextBox Placeholder="Nome..."></SfTextBox>
+                    </td>
+                    <td>
+                        <SfTextBox Placeholder="Ramal..."></SfTextBox>
+                    </td>
+                    <td>
+                        <SfTextBox Placeholder="KM..."></SfTextBox>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Seção: Dano/Avaria -->
+    <div class="section">
+        <div class="form-row-vertical">
+            <label>Dano ou Avaria:</label>
+            <SfTextBox Placeholder="Dano ou avaria..." CssClass="multiline" Multiline="true"></SfTextBox>
+        </div>
+    </div>
+
+    <!-- Seção: Rubrica / Ponto -->
+    <div class="section">
+        <div class="form-row">
+            <label>Rubrica:</label>
+            <SfTextBox Placeholder="Rubrica..."></SfTextBox>
+        </div>
+        <div class="form-row">
+            <label>Ponto:</label>
+            <SfComboBox TValue="string" TItem="PontoFields" PopupHeight="230px" Index="2"
+                        Placeholder="Selecione o ponto" DataSource="@Pontos">
+                <ComboBoxFieldSettings Text="Text" Value="ID"></ComboBoxFieldSettings>
+            </SfComboBox>
+        </div>
+    </div>
+
+    <!-- Se quiser, acrescente aqui uma "Vistoria Final" e repita a estrutura acima -->
+    <!-- Seção: Vistoria inicial -->
+    <div class="section-title">VISTORIA FINAL</div>
+    <div class="section">
+        <div class="form-row">
+            <label>Data/hora:</label>
+            <SfDateTimePicker TValue="DateTime?" Placeholder="Selecione a data/hora"
+                              Min="@min" Max="@max" EnableMask="true">
+            </SfDateTimePicker>
+        </div>
+        <div class="form-row">
+            <label>CRLV:</label>
+            <SfCheckBox @bind-Checked="@clrv" Label=" "></SfCheckBox>
+            @* </div>
+            <div class="form-row"> *@
+            <label>Cartão de abastecimento:</label>
+            <SfCheckBox @bind-Checked="@cda" Label=" "></SfCheckBox>
+        </div>
+        <div class="form-row">
+            <label>Nível de combustível:</label>
+            <div class="fuel-radios">
+                <SfRadioButton Label="Cheio" Name="combustivelFinal" Checked=false></SfRadioButton>
+                <SfRadioButton Label="3/4" Name="combustivelFinal" Checked=false></SfRadioButton>
+                <SfRadioButton Label="2/4" Name="combustivelFinal" Checked=false></SfRadioButton>
+                <SfRadioButton Label="1/4" Name="combustivelFinal" Checked=false></SfRadioButton>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção: Dano/Avaria -->
+    <div class="section">
+        <div class="form-row-vertical">
+            <label>Dano ou Avaria:</label>
+            <SfTextBox Placeholder="Dano ou avaria..." CssClass="multiline" Multiline="true"></SfTextBox>
+        </div>
+    </div>
+
+    <!-- Seção: Rubrica / Ponto -->
+    <div class="section">
+        <div class="form-row">
+            <label>Rubrica:</label>
+            <SfTextBox Placeholder="Rubrica..."></SfTextBox>
+        </div>
+        <div class="form-row">
+            <label>Ponto:</label>
+            <SfComboBox TValue="string" TItem="PontoFields" PopupHeight="230px" Index="2"
+                        Placeholder="Selecione o ponto" DataSource="@Pontos">
+                <ComboBoxFieldSettings Text="Text" Value="ID"></ComboBoxFieldSettings>
+            </SfComboBox>
+        </div>
+    </div>
+
+    <!-- Seção: Captura de Mídia -->
+    <div class="section">
+        <div class="form-row">
+            <label>Capturar Mídia:</label>
+            <SfButton OnClick="@CapturePhoto">📷 Tirar Foto</SfButton>
+            <SfButton OnClick="@CaptureVideo">🎥 Gravar Vídeo</SfButton>
+        </div>
+
+        <!-- Galeria de Imagens -->
+        <div class="image-gallery">
+            @foreach (var image in vistoriaAtual.Fotos)
+            {
+                <img src="@image" class="captured-media" width="100" height="100" />
+            }
+        </div>
+
+        <!-- Galeria de Vídeos -->
+        <div class="video-gallery">
+            @foreach (var video in vistoriaAtual.Videos)
+            {
+                <video width="150" height="100" controls>
+                    <source src="@video" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+            }
+        </div>
+    </div>
+
+    <!-- Botão para Salvar a Vistoria -->
+    <SfButton OnClick="@SalvarVistoria">💾 Salvar Vistoria</SfButton>
+
+</div>
+
+<style>
+    /* ----- Reset básico ----- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* ----- Corpo e container principal ----- */
+    body {
+        font-family: Arial, sans-serif;
+        /* Caso queira limitar a largura total:
+        max-width: 900px;
+        margin: 0 auto;
+        */
+    }
+
+    .inspection-form {
+        padding: 1rem;
+        border: 1px solid #ccc;
+        margin: 1rem auto;
+        max-width: 800px; /* Ajuste a largura conforme desejar */
+        background-color: #fff;
+    }
+
+    /* ----- Cabeçalhos ----- */
+    .inspection-form h1 {
+        text-align: center;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #000;
+        padding-bottom: 0.5rem;
+    }
+
+    .section-title {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        border-bottom: 2px solid #000;
+        padding-bottom: 0.3rem;
+    }
+
+    /* ----- Seções e linhas de formulário ----- */
+    .section {
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+    }
+
+    .form-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    /* Variante vertical (para textarea / multiline) */
+    .form-row-vertical {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    /* ----- Rótulos ----- */
+    .form-row label,
+    .form-row-vertical label {
+        width: 150px;
+        font-weight: bold;
+        margin-right: 0.5rem;
+        margin-bottom: 0.25rem; /* Para .form-row-vertical */
+    }
+
+    /* ----- Inputs (Syncfusion) ----- */
+    .form-row .e-input,
+    .form-row .e-input-group.e-control-wrapper .e-input,
+    .form-row .e-checkbox-wrapper,
+    .form-row .e-radio-wrapper,
+    .form-row-vertical .e-input,
+    .form-row-vertical .e-input-group.e-control-wrapper .e-input {
+        flex: 1;
+        min-width: 0;
+    }
+
+    /* Ajustes para combos e numeric textboxes */
+    .e-input-group.e-control-wrapper,
+    .e-float-input.e-control-wrapper {
+        width: 100% !important;
+    }
+
+    /* Se quiser um visual de borda/padding diferente nos inputs: */
+    /*
+    .e-input, .e-input-group.e-control-wrapper .e-input {
+        border-radius: 4px;
+        border: 1px solid #999;
+        padding: 0.35rem;
+    }
+    */
+
+    /* ----- Tabela (Setor, Nome, Ramal, KM) ----- */
+    .request-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .request-table th {
+        text-align: left;
+        font-weight: bold;
+        padding: 0.5rem;
+        border-bottom: 2px solid #000;
+    }
+
+    .request-table td {
+        padding: 0.5rem;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Força as TextBox da tabela ocuparem 100% na célula */
+    .request-table .e-input-group.e-control-wrapper {
+        width: 100% !important;
+    }
+
+    /* ----- Dano/Avaria (multiline) ----- */
+    .multiline.e-input {
+        height: 60px; /* Aumente se quiser mais espaço de digitação */
+        resize: none; /* Desabilita o redimensionamento manual */
+    }
+
+    /* ----- Combustível (radios) ----- */
+    .fuel-radios {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-left: 0.5rem;
+    }
+
+    /* Remove label textual do SfCheckBox e SfRadioButton (se quiser),
+       pois já estamos usando fora. Exemplo:
+       .e-checkbox-wrapper .e-label, .e-radio-wrapper .e-label { display: none; }
+    */
+
+    /* Ajustes ao label do checkbox/radio se preferir algo mais suave */
+    .e-checkbox-wrapper .e-label,
+    .e-radio-wrapper .e-label {
+        margin-left: 4px;
+        font-weight: normal;
+    }
+
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .captured-media {
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #f9f9f9;
+    }
+
+</style>
+
+@code {
+    public class PlacaFields
+    {
+        public string ID { get; set; } = string.Empty;
+        public string Text { get; set; } = string.Empty;
+    }
+    private List<PlacaFields> Placas = new List<PlacaFields>() {
+        new PlacaFields(){ ID= "Placa1", Text= "ABC-1234" },
+        new PlacaFields(){ ID= "Placa2", Text= "XYZ-9876" },
+        new PlacaFields(){ ID= "Placa3", Text= "FGH-5678" },
+        new PlacaFields(){ ID= "Placa4", Text= "IJK-4321" },
+        new PlacaFields(){ ID= "Placa5", Text= "LMN-0001" },
+        new PlacaFields(){ ID= "Placa6", Text= "PQR-9999" },
+        new PlacaFields(){ ID= "Placa7", Text= "STU-4545" },
+        new PlacaFields(){ ID= "Placa8", Text= "VWX-1212" },
+        new PlacaFields(){ ID= "Placa9", Text= "YZA-8383" },
+        new PlacaFields(){ ID= "Placa10", Text= "BCD-7575"},
+    };
+
+
+    public class MotoristaFields
+    {
+        public string ID { get; set; } = string.Empty;
+        public string Text { get; set; } = string.Empty;
+    }
+    private List<MotoristaFields> Motoristas = new List<MotoristaFields>() {
+        new MotoristaFields(){ ID= "Motorista1", Text= "João" },
+        new MotoristaFields(){ ID= "Motorista2", Text= "Pedro" },
+        new MotoristaFields(){ ID= "Motorista3", Text= "Lucas" },
+        new MotoristaFields(){ ID= "Motorista4", Text= "Gabriel" },
+        new MotoristaFields(){ ID= "Motorista5", Text= "Mateus" },
+        new MotoristaFields(){ ID= "Motorista6", Text= "Miguel" },
+        new MotoristaFields(){ ID= "Motorista7", Text= "Francisco" },
+        new MotoristaFields(){ ID= "Motorista8", Text= "Ana" },
+        new MotoristaFields(){ ID= "Motorista9", Text= "Maria" },
+        new MotoristaFields(){ ID= "Motorista10", Text= "Beatriz"},
+    };
+
+
+    public class PontoFields
+    {
+        public string ID { get; set; } = string.Empty;
+        public string Text { get; set; } = string.Empty;
+    }
+    private List<PontoFields> Pontos = new List<PontoFields>() {
+        new PontoFields(){ ID= "Ponto1", Text= "p_001" },
+        new PontoFields(){ ID= "Ponto2", Text= "p_123" },
+        new PontoFields(){ ID= "Ponto3", Text= "p_456" },
+        new PontoFields(){ ID= "Ponto4", Text= "p_789" },
+        new PontoFields(){ ID= "Ponto5", Text= "p_007" },
+        new PontoFields(){ ID= "Ponto6", Text= "p_050" },
+        new PontoFields(){ ID= "Ponto7", Text= "p_999" },
+        new PontoFields(){ ID= "Ponto8", Text= "p_250" },
+        new PontoFields(){ ID= "Ponto9", Text= "p_305" },
+        new PontoFields(){ ID= "Ponto10", Text= "p_777"},
+    };
+
+
+    public DateTime min { get; set; } = new DateTime(2020, 1, 5, 9, 0, 0);
+    public DateTime max { get; set; } = new DateTime(2020, 1, 24, 18, 0, 0);
+    private bool clrv = false;
+    private bool cda = false;
+
+    /* Valor padrão do RadioButton (combustível) */
+    private string CheckedValue = "cheio";
+
+    private string? PlacaSelecionada { get; set; }
+    private string? MotoristaSelecionado { get; set; }
+
+    public class Vistorias
+    {
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public string? Placa { get; set; }
+        public string? Motorista { get; set; }
+        public int? NumeroFicha { get; set; }
+        public List<string> Fotos { get; set; } = new();
+        public List<string> Videos { get; set; } = new();
+    }
+
+    private Vistorias vistoriaAtual = new();
+
+    private async Task CapturePhoto()
+    {
+        try
+        {
+            var photo = await MediaPicker.CapturePhotoAsync();
+            if (photo != null)
+            {
+                var filePath = Path.Combine(FileSystem.AppDataDirectory, photo.FileName);
+                using var stream = await photo.OpenReadAsync();
+                using var newStream = File.OpenWrite(filePath);
+                await stream.CopyToAsync(newStream);
+
+                vistoriaAtual.Fotos.Add(filePath);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro ao capturar foto: {ex.Message}");
+        }
+    }
+
+    private async Task CaptureVideo()
+    {
+        try
+        {
+            var video = await MediaPicker.CaptureVideoAsync();
+            if (video != null)
+            {
+                var filePath = Path.Combine(FileSystem.AppDataDirectory, video.FileName);
+                using var stream = await video.OpenReadAsync();
+                using var newStream = File.OpenWrite(filePath);
+                await stream.CopyToAsync(newStream);
+
+                vistoriaAtual.Videos.Add(filePath);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro ao capturar vídeo: {ex.Message}");
+        }
+    }
+
+    private async Task SalvarVistoria()
+    {
+        var json = JsonSerializer.Serialize(vistoriaAtual);
+        var filePath = Path.Combine(FileSystem.AppDataDirectory, $"{vistoriaAtual.Id}.json");
+
+        await File.WriteAllTextAsync(filePath, json);
+        Console.WriteLine("Vistoria salva com sucesso!");
+    }
+
+}
