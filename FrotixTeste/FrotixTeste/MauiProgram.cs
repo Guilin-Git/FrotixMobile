@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Syncfusion.Blazor;
+using Syncfusion.Licensing;
 
 namespace FrotixTeste
 {
@@ -7,6 +8,8 @@ namespace FrotixTeste
     {
         public static MauiApp CreateMauiApp()
         {
+            SyncfusionLicenseProvider.RegisterLicense("Mzc1MjE2NEAzMjM4MmUzMDJlMzBXTURCckpEa0UvMU9zQ1RCTzhLbTFITzVIVU5QUGl5cHVSdXpGSE9wTThZPQ==");
+
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()

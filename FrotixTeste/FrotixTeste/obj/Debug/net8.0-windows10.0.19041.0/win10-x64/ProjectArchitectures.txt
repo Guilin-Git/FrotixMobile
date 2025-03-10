@@ -1,1 +1,1 @@
-C:\Users\guibr\Desktop\Frotix Maui\FrotixTeste\FrotixTeste\FrotixTeste.csproj;x64
+C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixTeste\FrotixTeste.csproj;x64
