@@ -1,27 +1,31 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\FrotixTeste.styles.css",
+      "Id": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\FrotixTeste.styles.css",
       "PackagePath": "staticwebassets\\FrotixTeste.styles.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\wwwroot\\css\\app.css",
+      "Id": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\wwwroot\\favicon.png",
+      "Id": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\wwwroot\\index.html",
+      "Id": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\wwwroot\\images\\frotix.png",
+      "PackagePath": "staticwebassets\\images\\frotix.png"
+    },
+    {
+      "Id": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

@@ -99,3 +99,7 @@
         overflow-y: auto;
     }
 }
+
+.logo-adjust {
+    margin-top: -5px;
+}

@@ -1,46 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\",
+  "WorkspaceRootPath": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\services\\vistoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\services\\vistoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\components\\pages\\vistoria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\pages\\vistoria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\frotixteste.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\frotixteste.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\resources\\appicon\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\resources\\appicon\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\frotixteste.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\frotixteste.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\resources\\appicon\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\resources\\appicon\\appicon.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
       "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\projetos\\frotixmobile\\frotixteste\\frotixteste\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\components\\pages\\vistoria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\pages\\vistoria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,21 +58,20 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\App.xaml",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\App.xaml",
               "RelativeDocumentMoniker": "FrotixTeste\\App.xaml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\App.xaml",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\App.xaml",
               "RelativeToolTip": "FrotixTeste\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-10T13:46:38.831Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -84,115 +91,135 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NavMenu.razor.css",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\NavMenu.razor.css",
-              "RelativeDocumentMoniker": "FrotixTeste\\Components\\Layout\\NavMenu.razor.css",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\NavMenu.razor.css",
-              "RelativeToolTip": "FrotixTeste\\Components\\Layout\\NavMenu.razor.css",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAgwGkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-10T14:05:14.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "FrotixTeste\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "FrotixTeste\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T13:59:18.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainLayout.razor.css",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\MainLayout.razor.css",
-              "RelativeDocumentMoniker": "FrotixTeste\\Components\\Layout\\MainLayout.razor.css",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\MainLayout.razor.css",
-              "RelativeToolTip": "FrotixTeste\\Components\\Layout\\MainLayout.razor.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-10T13:58:42.598Z",
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Platforms\\Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "FrotixTeste\\Platforms\\Android\\MainActivity.cs",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Platforms\\Android\\MainActivity.cs",
+              "RelativeToolTip": "FrotixTeste\\Platforms\\Android\\MainActivity.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T15:26:42.148Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "VistoriaService.cs",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Services\\VistoriaService.cs",
+              "RelativeDocumentMoniker": "FrotixTeste\\Services\\VistoriaService.cs",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Services\\VistoriaService.cs",
+              "RelativeToolTip": "FrotixTeste\\Services\\VistoriaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T15:40:16.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\MauiProgram.cs",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\MauiProgram.cs",
               "RelativeDocumentMoniker": "FrotixTeste\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\MauiProgram.cs",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\MauiProgram.cs",
               "RelativeToolTip": "FrotixTeste\\MauiProgram.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T13:47:51.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\MainPage.xaml",
-              "RelativeDocumentMoniker": "FrotixTeste\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\MainPage.xaml",
-              "RelativeToolTip": "FrotixTeste\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-10T13:47:20.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FrotixTeste.csproj",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\FrotixTeste.csproj",
-              "RelativeDocumentMoniker": "FrotixTeste\\FrotixTeste.csproj",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\FrotixTeste.csproj",
-              "RelativeToolTip": "FrotixTeste\\FrotixTeste.csproj",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADEAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-10T13:34:28.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appicon.svg",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Resources\\AppIcon\\appicon.svg",
-              "RelativeDocumentMoniker": "FrotixTeste\\Resources\\AppIcon\\appicon.svg",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Resources\\AppIcon\\appicon.svg",
-              "RelativeToolTip": "FrotixTeste\\Resources\\AppIcon\\appicon.svg",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-03-10T13:33:49.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Vistoria.razor",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Pages\\Vistoria.razor",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Pages\\Vistoria.razor",
               "RelativeDocumentMoniker": "FrotixTeste\\Components\\Pages\\Vistoria.razor",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Pages\\Vistoria.razor",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Pages\\Vistoria.razor",
               "RelativeToolTip": "FrotixTeste\\Components\\Pages\\Vistoria.razor",
-              "ViewState": "AgIAAHgBAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-10T13:22:22.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "FrotixTeste\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "FrotixTeste\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T13:59:18.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\MainPage.xaml",
+              "RelativeDocumentMoniker": "FrotixTeste\\MainPage.xaml",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\MainPage.xaml",
+              "RelativeToolTip": "FrotixTeste\\MainPage.xaml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-10T13:47:20.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "FrotixTeste\\Components\\Layout\\MainLayout.razor.css",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "FrotixTeste\\Components\\Layout\\MainLayout.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-10T13:58:42.598Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "FrotixTeste.csproj",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\FrotixTeste.csproj",
+              "RelativeDocumentMoniker": "FrotixTeste\\FrotixTeste.csproj",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\FrotixTeste.csproj",
+              "RelativeToolTip": "FrotixTeste\\FrotixTeste.csproj",
+              "ViewState": "AgIAABgAAAAAAAAAAIBJwDEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-10T13:34:28.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appicon.svg",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Resources\\AppIcon\\appicon.svg",
+              "RelativeDocumentMoniker": "FrotixTeste\\Resources\\AppIcon\\appicon.svg",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Resources\\AppIcon\\appicon.svg",
+              "RelativeToolTip": "FrotixTeste\\Resources\\AppIcon\\appicon.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQKSURBVDhPrVRbTCNVGP5OOzO9TKEWSrGUttpdpV2ua7ioaDa7ullcdVe8rHFNjPFBY4hGY0wIJprw5ItmCdEXL/FRE4MQsw9LiCthIcFFxA3hFiEsLQUKpaW03XZmOuOZaQsY9W2/5J/zz3/55j///OfgrkJRFFJQD9DX13elrq7uXVWnfk2KugpZlpHJZJBKpYa6u7u7gsFgWHP8HyjhHE2Sc7ncf4okSfLMzIw8NTUl9/f3/xgIBGoKqRr0hfUAHR0dXW1tbXaZFiQJccjpWyDJbyBsfQ9x46oW81dIRHNLG0wmk4/juOr19fVbUQrV9w9CrvVl4m9s7VpIG\u002BxL6\u002BMolb6EaesrSOFhgNRAVtyQIhMIbgPeB1ths9kYs9l8vKyszD0/P39jnyJPSAj4hy7YPE\u002B/\u002BUmJ0/NkS4DlzlRegXXzGmZWmvBT4j0sGy6jvvE85O05JEUeN6ZXMT09jUQioafEgdHR0R/i8XiYUfmMdees3ovvfPhEc/VbL9Qvm5vljxBdTGM81YMl33MICiZMLG8iJa7iRUct/I3HUA0HBEGAxWLB7OysVpcKnfpwdLzd3haoePVS7WRpS/oDsjeTwTrpRbqiE2wK4EUJnvuqcHM7h7HY/SAlHtjt5XA6nbBardDr9QdToBF6nZbOZ/1z5Q3i52RnSoS54TvUP9yJSyedeKXBjuTGNmycAYQ3YSrKYiejpVFQkiOjpULb8omK\u002BOOPWL81JVeM\u002BEL8GKFfWYjSn/Qn0GDQucsxKGd0YDkWK9tZxPYFVJUaVS7a/8MZVcFUORnu9YZr1ezaMrmu\u002B1ThW84Sn0IrKATlSRWIdwTaMxFZSYKk2jS36skTFkmZ0ILnYmzlZ8Nk8g1lzn0u99vEor6p0kwUeiLUIJVQTSR0MF202ka3BQ4Lp9nydHnCIhglEX5p67Yrez13GmJKYXgTq2v32clJFw\u002BrkUEiI2JyNYa1WFrNhNtmhoXaDzkOyVQwmVCmPZYy/DK\u002ByZzwMHFvpc9FhjfSGF7agkK3yHAMcpZyxHJm7EZ28ZSOgKVShFb/kQp10h4xne/JXg5v7ny2OLcSvb2xrwh8CeicgBx/AFmXFxF6h0QiUfiMEp6pqwSnL/7lf0Pf8xocp\u002B6N\u002BW6OL4x5nayYjIv\u002BRFLmQ5E9RHfiuBPdBbu/h9p7GLx/\u002BhjKeNo/erK02mhlhOpra2sYHBz8mp6asJ7O62R4E2cC3NYpV2Rs1lndaD776GN\u002BB5tDjZVBaxWPC7UOPN9UBSOrTVl\u002Bn4VdE52OEgYxNDSkEeatR9Db2zumXl\u002BiKBZEkEUhL/SoFSR7sKoxIyMjstvtblHzC588BG3w7wMDA\u002B0FXRP1Ui02vmgrigpa2R902dVe7i6AvwHcTSP/8z9AyQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-03-10T13:33:49.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "FrotixTeste\\Components\\Layout\\NavMenu.razor.css",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeToolTip": "FrotixTeste\\Components\\Layout\\NavMenu.razor.css",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAgwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-10T14:05:14.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AndroidManifest.xml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Platforms\\Android\\AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Platforms\\Android\\AndroidManifest.xml",
               "RelativeDocumentMoniker": "FrotixTeste\\Platforms\\Android\\AndroidManifest.xml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Projetos\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Platforms\\Android\\AndroidManifest.xml",
               "RelativeToolTip": "FrotixTeste\\Platforms\\Android\\AndroidManifest.xml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-03-10T13:13:50.76Z"

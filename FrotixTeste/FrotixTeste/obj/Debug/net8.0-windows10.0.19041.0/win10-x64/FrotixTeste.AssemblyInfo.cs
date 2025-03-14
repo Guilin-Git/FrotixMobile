@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FrotixTeste")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8bd0824eb0bf7eaa068818ac756b7b210bd6a583")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a008a8e889350874487cf7c7a233090209acb911")]
 [assembly: System.Reflection.AssemblyProductAttribute("FrotixTeste")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FrotixTeste")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
