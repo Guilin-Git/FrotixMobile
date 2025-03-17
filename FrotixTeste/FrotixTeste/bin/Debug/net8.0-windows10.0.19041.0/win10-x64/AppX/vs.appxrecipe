@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-03-14T11:11:11.686</Modified>
+      <Modified>2025-03-17T17:29:32.315</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-03-14T11:11:11.281</Modified>
+      <Modified>2025-03-17T15:31:18.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\FrotixTeste.runtimeconfig.json">
       <PackagePath>FrotixTeste.runtimeconfig.json</PackagePath>
-      <Modified>2025-03-13T16:48:54.954</Modified>
+      <Modified>2025-03-14T11:54:04.584</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\FrotixTeste.dll">
       <PackagePath>FrotixTeste.dll</PackagePath>
-      <Modified>2025-03-14T11:11:09.692</Modified>
+      <Modified>2025-03-17T17:29:31.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>FrotixTeste.exe</PackagePath>
-      <Modified>2025-03-14T11:11:09.757</Modified>
+      <Modified>2025-03-17T17:29:31.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -80,23 +80,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\frotixSplashScreen.scale-100.png">
       <PackagePath>frotixSplashScreen.scale-100.png</PackagePath>
-      <Modified>2025-03-13T16:48:50.357</Modified>
+      <Modified>2025-03-14T11:53:56.131</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\frotixSplashScreen.scale-125.png">
       <PackagePath>frotixSplashScreen.scale-125.png</PackagePath>
-      <Modified>2025-03-13T16:48:50.403</Modified>
+      <Modified>2025-03-14T11:53:56.211</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\frotixSplashScreen.scale-150.png">
       <PackagePath>frotixSplashScreen.scale-150.png</PackagePath>
-      <Modified>2025-03-13T16:48:50.450</Modified>
+      <Modified>2025-03-14T11:53:56.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\frotixSplashScreen.scale-200.png">
       <PackagePath>frotixSplashScreen.scale-200.png</PackagePath>
-      <Modified>2025-03-13T16:48:50.509</Modified>
+      <Modified>2025-03-14T11:53:56.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\frotixSplashScreen.scale-400.png">
       <PackagePath>frotixSplashScreen.scale-400.png</PackagePath>
-      <Modified>2025-03-13T16:48:50.671</Modified>
+      <Modified>2025-03-14T11:53:56.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -104,187 +104,187 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2025-03-13T16:48:52.230</Modified>
+      <Modified>2025-03-14T11:53:59.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.219</Modified>
+      <Modified>2025-03-14T11:53:59.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.219</Modified>
+      <Modified>2025-03-14T11:53:59.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.218</Modified>
+      <Modified>2025-03-14T11:53:59.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.218</Modified>
+      <Modified>2025-03-14T11:53:59.596</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.218</Modified>
+      <Modified>2025-03-14T11:53:59.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.226</Modified>
+      <Modified>2025-03-14T11:53:59.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.226</Modified>
+      <Modified>2025-03-14T11:53:59.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.225</Modified>
+      <Modified>2025-03-14T11:53:59.609</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.226</Modified>
+      <Modified>2025-03-14T11:53:59.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.226</Modified>
+      <Modified>2025-03-14T11:53:59.609</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.228</Modified>
+      <Modified>2025-03-14T11:53:59.613</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.228</Modified>
+      <Modified>2025-03-14T11:53:59.613</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.227</Modified>
+      <Modified>2025-03-14T11:53:59.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.227</Modified>
+      <Modified>2025-03-14T11:53:59.612</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.227</Modified>
+      <Modified>2025-03-14T11:53:59.612</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.230</Modified>
+      <Modified>2025-03-14T11:53:59.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.230</Modified>
+      <Modified>2025-03-14T11:53:59.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.230</Modified>
+      <Modified>2025-03-14T11:53:59.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.229</Modified>
+      <Modified>2025-03-14T11:53:59.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.229</Modified>
+      <Modified>2025-03-14T11:53:59.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.229</Modified>
+      <Modified>2025-03-14T11:53:59.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.229</Modified>
+      <Modified>2025-03-14T11:53:59.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.228</Modified>
+      <Modified>2025-03-14T11:53:59.614</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.228</Modified>
+      <Modified>2025-03-14T11:53:59.614</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.228</Modified>
+      <Modified>2025-03-14T11:53:59.614</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.223</Modified>
+      <Modified>2025-03-14T11:53:59.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.222</Modified>
+      <Modified>2025-03-14T11:53:59.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.222</Modified>
+      <Modified>2025-03-14T11:53:59.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.222</Modified>
+      <Modified>2025-03-14T11:53:59.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.221</Modified>
+      <Modified>2025-03-14T11:53:59.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.224</Modified>
+      <Modified>2025-03-14T11:53:59.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.224</Modified>
+      <Modified>2025-03-14T11:53:59.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.224</Modified>
+      <Modified>2025-03-14T11:53:59.604</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.223</Modified>
+      <Modified>2025-03-14T11:53:59.604</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.223</Modified>
+      <Modified>2025-03-14T11:53:59.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.225</Modified>
+      <Modified>2025-03-14T11:53:59.609</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.225</Modified>
+      <Modified>2025-03-14T11:53:59.608</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.225</Modified>
+      <Modified>2025-03-14T11:53:59.608</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.224</Modified>
+      <Modified>2025-03-14T11:53:59.607</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.224</Modified>
+      <Modified>2025-03-14T11:53:59.606</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.221</Modified>
+      <Modified>2025-03-14T11:53:59.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.221</Modified>
+      <Modified>2025-03-14T11:53:59.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.220</Modified>
+      <Modified>2025-03-14T11:53:59.599</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.220</Modified>
+      <Modified>2025-03-14T11:53:59.599</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2025-03-13T16:48:52.220</Modified>
+      <Modified>2025-03-14T11:53:59.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\Resources\Images\frotix.png">
       <PackagePath>Resources\Images\frotix.png</PackagePath>
@@ -292,7 +292,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\FrotixTeste.deps.json">
       <PackagePath>FrotixTeste.deps.json</PackagePath>
-      <Modified>2025-03-14T11:11:10.944</Modified>
+      <Modified>2025-03-17T15:31:18.262</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -820,7 +820,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.build.endpoints.json">
       <PackagePath>FrotixTeste.staticwebassets.endpoints.json</PackagePath>
-      <Modified>2025-03-13T16:48:39.403</Modified>
+      <Modified>2025-03-14T11:53:24.956</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -836,11 +836,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\FrotixTeste.styles.css">
       <PackagePath>wwwroot\FrotixTeste.styles.css</PackagePath>
-      <Modified>2025-03-13T16:48:39.345</Modified>
+      <Modified>2025-03-14T11:53:24.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\FrotixTeste.bundle.scp.css">
       <PackagePath>wwwroot\FrotixTeste.3qw9qsns9t.bundle.scp.css</PackagePath>
-      <Modified>2025-03-13T16:48:39.346</Modified>
+      <Modified>2025-03-14T11:53:24.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\scripts\data.min.js">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\data.min.js</PackagePath>

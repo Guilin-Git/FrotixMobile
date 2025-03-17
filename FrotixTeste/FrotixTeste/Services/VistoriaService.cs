@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 using static FrotixTeste.Components.Pages.Vistoria;
+using FrotixTeste.Models; // 🔹 Garante que o serviço reconheça Vistorias corretamente
 
 public class VistoriaService
 {
-    private readonly string _connectionString = "Server=  172.20.10.2,1433;Database=VistoriaDB;User Id=teste;Password=Guigui789;TrustServerCertificate=True;Encrypt=False;";
+    private readonly string _connectionString = "Server=  172.28.2.214,1433;Database=VistoriaDB;User Id=teste;Password=Guigui789;TrustServerCertificate=True;Encrypt=False;";
 
 
     public async Task<List<PlacaFields>> ObterPlacasAsync()
@@ -129,6 +130,102 @@ public class VistoriaService
             }
         }
     }
+
+    // 🔹 Obtém todas as vistorias do banco de dados
+    public async Task<List<Vistorias>> ObterTodasVistoriasAsync()
+    {
+        var vistorias = new List<Vistorias>();
+
+        using (SqlConnection conn = new SqlConnection(_connectionString))
+        {
+            await conn.OpenAsync();
+            string query = @"SELECT Id, PlacaID, MotoristaID, DataHoraInicio, DataHoraFinal, KM, DanoAvaria, 
+                                PontoID, PontoFinalID, NivelCombustivelInicial, NivelCombustivelFinal 
+                         FROM Vistorias";  // Certifique-se de que PontoID e PontoFinalID estão incluídos!
+
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            using (SqlDataReader reader = await cmd.ExecuteReaderAsync())
+            {
+                while (await reader.ReadAsync())
+                {
+                    vistorias.Add(new Vistorias
+                    {
+                        Id = reader["Id"].ToString()!,
+                        PlacaID = reader["PlacaID"].ToString()!,
+                        MotoristaID = reader["MotoristaID"].ToString()!,
+                        DataHoraInicio = reader.GetDateTime(reader.GetOrdinal("DataHoraInicio")),
+                        DataHoraFinal = reader.GetDateTime(reader.GetOrdinal("DataHoraFinal")),
+                        KM = reader["KM"].ToString()!,
+                        DanoAvaria = reader["DanoAvaria"].ToString()!,
+                        PontoID = reader["PontoID"] != DBNull.Value ? reader["PontoID"].ToString()! : "",
+                        PontoFinalID = reader["PontoFinalID"] != DBNull.Value ? reader["PontoFinalID"].ToString()! : "",
+                        NivelCombustivelInicial = reader["NivelCombustivelInicial"].ToString()!,
+                        NivelCombustivelFinal = reader["NivelCombustivelFinal"].ToString()!
+                    });
+                }
+            }
+        }
+
+        return vistorias;
+    }
+
+
+
+    // 🔹 Atualiza uma vistoria existente
+    public async Task<bool> AtualizarVistoriaAsync(Vistorias vistoria)
+    {
+        using (SqlConnection conn = new SqlConnection(_connectionString))
+        {
+            await conn.OpenAsync();
+            string query = @"
+            UPDATE Vistorias 
+            SET PlacaID = @PlacaID, 
+                MotoristaID = @MotoristaID,
+                PontoID = @PontoID,  -- ✅ Garante que o PontoID seja atualizado
+                PontoFinalID = @PontoFinalID, -- ✅ Garante que o PontoFinalID seja atualizado
+                DataHoraInicio = @DataHoraInicio, 
+                DataHoraFinal = @DataHoraFinal, 
+                KM = @KM, 
+                DanoAvaria = @DanoAvaria
+            WHERE Id = @Id";
+
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@Id", vistoria.Id);
+                cmd.Parameters.AddWithValue("@PlacaID", vistoria.PlacaID);
+                cmd.Parameters.AddWithValue("@MotoristaID", vistoria.MotoristaID);
+                cmd.Parameters.AddWithValue("@PontoID", vistoria.PontoID ?? (object)DBNull.Value);  // ✅ Corrige valores nulos
+                cmd.Parameters.AddWithValue("@PontoFinalID", vistoria.PontoFinalID ?? (object)DBNull.Value); // ✅ Corrige valores nulos
+                cmd.Parameters.AddWithValue("@DataHoraInicio", vistoria.DataHoraInicio);
+                cmd.Parameters.AddWithValue("@DataHoraFinal", vistoria.DataHoraFinal);
+                cmd.Parameters.AddWithValue("@KM", vistoria.KM);
+                cmd.Parameters.AddWithValue("@DanoAvaria", vistoria.DanoAvaria);
+
+                int rowsAffected = await cmd.ExecuteNonQueryAsync();
+                return rowsAffected > 0;
+            }
+        }
+    }
+
+
+    // 🔹 Remove uma vistoria pelo ID
+    public async Task<bool> ExcluirVistoriaAsync(string id)
+    {
+        using (SqlConnection conn = new SqlConnection(_connectionString))
+        {
+            await conn.OpenAsync();
+            string query = "DELETE FROM Vistorias WHERE Id = @Id";
+
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@Id", id);
+                int rowsAffected = await cmd.ExecuteNonQueryAsync();
+                return rowsAffected > 0;
+            }
+        }
+    }
+
+
 
 
 }

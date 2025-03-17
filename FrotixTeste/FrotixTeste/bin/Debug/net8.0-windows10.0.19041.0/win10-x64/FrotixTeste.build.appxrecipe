@@ -76,143 +76,143 @@
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
-      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
-      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
-      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
-      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+      <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
-      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
-      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
-      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
-      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
-      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
-      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
-      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
-      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
-      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
-      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
-      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
-      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
-      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
-      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
-      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
-      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
-      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
-      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
-      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
-      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
-      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
-      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
-      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
-      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
-      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
-      <PackagePath>appiconLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
-      <PackagePath>appiconLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
-      <PackagePath>appiconLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
-      <PackagePath>appiconLogo.scale-125.png</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
-      <PackagePath>appicon.ico</PackagePath>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+      <PackagePath>appiconLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+      <PackagePath>appiconLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+      <PackagePath>appiconLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+      <PackagePath>appiconLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\Resources\Images\frotix.png">
       <PackagePath>Resources\Images\frotix.png</PackagePath>
@@ -871,173 +871,173 @@
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\scripts\svgbase.min.js">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\svgbase.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\scripts\syncfusion-blazor-base.min.js">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\syncfusion-blazor-base.min.js</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\scripts\syncfusion-blazor.min.js">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\syncfusion-blazor.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bds-dark-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bds-dark-lite.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bds-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bds-dark.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bds-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bds-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\scripts\syncfusion-blazor-base.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\scripts\syncfusion-blazor-base.min.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bds.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bds.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap-dark-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap-dark-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bds-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bds-dark.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap-dark.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bds-dark-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bds-dark-lite.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bds-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bds-lite.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap4-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap4-lite.css</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap4.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap4.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5-dark-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5-dark-lite.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5-dark.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5-lite.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5.3-dark-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5.3-dark-lite.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5.3-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5.3-dark.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5.3-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5.3-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap4-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap4-lite.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5.3.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5.3.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5.3-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5.3-dark.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5.3-dark-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5.3-dark-lite.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5.3-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5.3-lite.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\customized\material-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\customized\material-dark.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5-dark.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5-dark-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5-dark-lite.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap5-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap5-lite.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap-dark.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap-dark-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap-dark-lite.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\bootstrap-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\bootstrap-lite.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\customized\material.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\customized\material.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\customized\tailwind-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\customized\tailwind-dark.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\customized\material-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\customized\material-dark.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\customized\tailwind.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\customized\tailwind.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fabric-dark-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fabric-dark-lite.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fabric-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fabric-dark.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fabric-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fabric-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\customized\tailwind-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\customized\tailwind-dark.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fabric.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fabric.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent-dark-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent-dark-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fabric-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fabric-dark.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent-dark.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fabric-dark-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fabric-dark-lite.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fabric-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fabric-lite.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent2-dark-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent2-dark-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent2.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent2.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent2-dark.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent2-dark.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent2-highcontrast-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent2-highcontrast-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent2-dark-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent2-dark-lite.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent2-highcontrast.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent2-highcontrast.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent2-highcontrast-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent2-highcontrast-lite.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent2-lite.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent2-lite.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent2.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent2.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent-dark.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\highcontrast-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\highcontrast-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent-dark-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent-dark-lite.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\fluent-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\fluent-lite.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\highcontrast.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\highcontrast.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material-dark-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material-dark-lite.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material-dark.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\highcontrast-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\highcontrast-lite.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material3-dark-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material3-dark-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material3.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material3.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material3-dark.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material3-dark.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material3-dark-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material3-dark-lite.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material3-lite.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material3-lite.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material3.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material3.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material-dark.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind-dark-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind-dark-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material-dark-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material-dark-lite.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind-dark.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind-dark.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\material-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\material-lite.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind3-dark-lite.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind3-dark-lite.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind3.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind3.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind3-dark.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind3-dark.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind3-dark-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind3-dark-lite.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind3-lite.css">
       <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind3-lite.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind3.css">
-      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind3.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind-dark.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind-dark-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind-dark-lite.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\guibr\.nuget\packages\syncfusion.blazor\28.2.9\staticwebassets\styles\tailwind-lite.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor\styles\tailwind-lite.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\Resources\Images\dotnet_bot.svg">
       <PackagePath>Resources\Images\dotnet_bot.svg</PackagePath>

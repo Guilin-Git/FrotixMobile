@@ -59,6 +59,13 @@ build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaXN0b3JpYS5y
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/VisualizarVistorias.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaXN1YWxpemFyVmlzdG9yaWFzLnJhem9y
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 

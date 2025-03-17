@@ -1,0 +1,202 @@
+﻿@page "/visualizar-vistorias"
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Navigations
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Popups
+@using FrotixTeste.Models
+@inject VistoriaService vistoriaService
+@using System.Diagnostics;
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Calendars
+
+<PageTitle>Lista de Vistorias</PageTitle>
+
+<h1>📋 Lista de Vistorias</h1>
+
+<SfGrid DataSource="@Vistorias" TItem="Vistorias"
+        AllowPaging="true" AllowSorting="true" AllowFiltering="false"
+        EditMode="EditMode.Dialog"
+        @ref="Grid">
+
+    <GridColumns>
+        <!-- 🔹 Placa: Exibe o Nome ao invés do ID -->
+        <GridColumn HeaderText="Placa" Width="150">
+            <Template>
+                @{
+                    var vistoria = context as Vistorias;
+                    @ObterPlacaNome(vistoria?.PlacaID)
+                }
+            </Template>
+        </GridColumn>
+
+        <!-- 🔹 Motorista: Exibe o Nome ao invés do ID -->
+        <GridColumn HeaderText="Motorista" Width="200">
+            <Template>
+                @{
+                    var vistoria = context as Vistorias;
+                    @ObterMotoristaNome(vistoria?.MotoristaID)
+                }
+            </Template>
+        </GridColumn>
+
+        <GridColumn Field="DataHoraInicio" HeaderText="Início" Width="180" Type="ColumnType.DateTime" Format="dd/MM/yyyy HH:mm"></GridColumn>
+        <GridColumn Field="DataHoraFinal" HeaderText="Fim" Width="180" Type="ColumnType.DateTime" Format="dd/MM/yyyy HH:mm"></GridColumn>
+        <GridColumn Field="KM" HeaderText="KM" Width="100"></GridColumn>
+        <GridColumn Field="DanoAvaria" HeaderText="Dano/Avaria" Width="200"></GridColumn>
+
+        <!-- 🔹 Coluna para Botão de Ação (Editar) -->
+        <GridColumn HeaderText="Ações" Width="120" TextAlign="TextAlign.Center">
+            <Template>
+                @{
+                    var vistoria = context as Vistorias;
+                }
+                <SfButton CssClass="e-small e-primary" OnClick="@(() => EditarVistoria(vistoria))">
+                    ✏️ Editar
+                </SfButton>
+            </Template>
+        </GridColumn>
+    </GridColumns>
+</SfGrid>
+
+
+<!-- 🔹 Diálogo para edição da Vistoria -->
+<SfDialog @bind-Visible="EditDialogVisible" Header="Editar Vistoria"
+          ShowCloseIcon="true" Width="500px" IsModal="true">
+    <DialogTemplates>
+        <Content>
+            <div class="form-row">
+                <label>Placa:</label>
+                <SfComboBox TValue="string" TItem="PlacaFields" DataSource="@Placas"
+                            @bind-Value="vistoriaAtual.PlacaID">
+                    <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
+                </SfComboBox>
+            </div>
+
+            <div class="form-row">
+                <label>Motorista:</label>
+                <SfComboBox TValue="string" TItem="MotoristaFields" DataSource="@Motoristas"
+                            @bind-Value="vistoriaAtual.MotoristaID">
+                    <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
+                </SfComboBox>
+            </div>
+
+            <div class="form-row">
+                <label>Ponto Inicial:</label>
+                <SfComboBox TValue="string" TItem="PontoFields" DataSource="@Pontos"
+                            @bind-Value="vistoriaAtual.PontoID">
+                    <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
+                </SfComboBox>
+            </div>
+
+            <div class="form-row">
+                <label>Ponto Final:</label>
+                <SfComboBox TValue="string" TItem="PontoFields" DataSource="@Pontos"
+                            @bind-Value="vistoriaAtual.PontoFinalID">
+                    <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
+                </SfComboBox>
+            </div>
+
+            <div class="form-row">
+                <label>Data Início:</label>
+                <SfDateTimePicker TValue="DateTime?" @bind-Value="vistoriaAtual.DataHoraInicio"></SfDateTimePicker>
+            </div>
+
+            <div class="form-row">
+                <label>Data Fim:</label>
+                <SfDateTimePicker TValue="DateTime?" @bind-Value="vistoriaAtual.DataHoraFinal"></SfDateTimePicker>
+            </div>
+
+            <div class="form-row">
+                <label>KM:</label>
+                <SfTextBox @bind-Value="vistoriaAtual.KM"></SfTextBox>
+            </div>
+
+            <div class="form-row">
+                <label>Dano/Avaria:</label>
+                <SfTextBox @bind-Value="vistoriaAtual.DanoAvaria"></SfTextBox>
+            </div>
+
+        </Content>
+
+        <FooterTemplate>
+            <SfButton CssClass="e-success" OnClick="SalvarEdicao">Salvar</SfButton>
+            <SfButton CssClass="e-outline" OnClick="() => EditDialogVisible = false">Cancelar</SfButton>
+        </FooterTemplate>
+    </DialogTemplates>
+</SfDialog>
+
+
+@code {
+    private List<Vistorias> Vistorias = new();
+    private List<PlacaFields> Placas = new();
+    private List<MotoristaFields> Motoristas = new();
+    private List<PontoFields> Pontos = new();
+    private SfGrid<Vistorias> Grid;
+    private bool EditDialogVisible = false;
+    private Vistorias vistoriaAtual = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Vistorias = await vistoriaService.ObterTodasVistoriasAsync();
+        Placas = await vistoriaService.ObterPlacasAsync();
+        Motoristas = await vistoriaService.ObterMotoristasAsync();
+        Pontos = await vistoriaService.ObterPontosAsync();
+        Debug.WriteLine($"📋 {Vistorias.Count} vistorias carregadas.");
+    }
+
+    private string ObterPlacaNome(string? placaId)
+    {
+        if (string.IsNullOrEmpty(placaId)) return "Desconhecido";
+        var placa = Placas.FirstOrDefault(p => p.ID == placaId);
+        return placa?.Text ?? "Desconhecido";
+    }
+
+    private string ObterMotoristaNome(string? motoristaId)
+    {
+        if (string.IsNullOrEmpty(motoristaId)) return "Desconhecido";
+        var motorista = Motoristas.FirstOrDefault(m => m.ID == motoristaId);
+        return motorista?.Text ?? "Desconhecido";
+    }
+
+    private void EditarVistoria(Vistorias vistoria)
+    {
+        if (vistoria == null) return;
+        Debug.WriteLine($"📝 Editando vistoria: {vistoria.Id}");
+
+        vistoriaAtual = new Vistorias
+            {
+                Id = vistoria.Id,
+                PlacaID = vistoria.PlacaID,
+                MotoristaID = vistoria.MotoristaID,
+                PontoID = vistoria.PontoID,  // ✅ Garante que PontoID seja copiado
+                PontoFinalID = vistoria.PontoFinalID, // ✅ Garante que PontoFinalID seja copiado
+                DataHoraInicio = vistoria.DataHoraInicio,
+                DataHoraFinal = vistoria.DataHoraFinal,
+                KM = vistoria.KM,
+                DanoAvaria = vistoria.DanoAvaria
+            };
+
+        EditDialogVisible = true;
+    }
+
+
+    private async Task SalvarEdicao()
+    {
+        Debug.WriteLine($"💾 Salvando edição da vistoria: {vistoriaAtual.Id}");
+
+        bool sucesso = await vistoriaService.AtualizarVistoriaAsync(vistoriaAtual);
+
+        if (sucesso)
+        {
+            Debug.WriteLine("✅ Vistoria atualizada com sucesso!");
+            EditDialogVisible = false;
+            Vistorias = await vistoriaService.ObterTodasVistoriasAsync();
+            await Grid.Refresh();
+        }
+        else
+        {
+            Debug.WriteLine("❌ Erro ao atualizar vistoria!");
+        }
+    }
+
+}
