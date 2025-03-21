@@ -4,97 +4,105 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.TargetFramework = net8.0-android
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = false
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FrotixTeste
 build_property.RootNamespace = FrotixTeste
-build_property.ProjectDir = C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste\
+build_property.ProjectDir = C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixTeste\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Projetos\FrotixMobile\FrotixTeste\FrotixTeste
+build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixTeste
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/App.xaml]
+[C:/Users/User/Desktop/FrotixMobile/FrotixMobile/FrotixTeste/FrotixTeste/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FrotixTeste.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/MainPage.xaml]
+[C:/Users/User/Desktop/FrotixMobile/FrotixMobile/FrotixTeste/FrotixTeste/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FrotixTeste.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/Counter.razor]
+[C:/Users/User/Desktop/FrotixMobile/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/Home.razor]
+[C:/Users/User/Desktop/FrotixMobile/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/Vistoria.razor]
+[C:/Users/User/Desktop/FrotixMobile/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/Vistoria.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaXN0b3JpYS5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/VisualizarVistorias.razor]
+[C:/Users/User/Desktop/FrotixMobile/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/VisualizarVistorias.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaXN1YWxpemFyVmlzdG9yaWFzLnJhem9y
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/Weather.razor]
+[C:/Users/User/Desktop/FrotixMobile/FrotixMobile/FrotixTeste/FrotixTeste/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/Components/Routes.razor]
+[C:/Users/User/Desktop/FrotixMobile/FrotixMobile/FrotixTeste/FrotixTeste/Components/Routes.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/Components/_Imports.razor]
+[C:/Users/User/Desktop/FrotixMobile/FrotixMobile/FrotixTeste/FrotixTeste/Components/_Imports.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/Components/Layout/MainLayout.razor]
+[C:/Users/User/Desktop/FrotixMobile/FrotixMobile/FrotixTeste/FrotixTeste/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = b-s2et7f6a20
 
-[C:/Projetos/FrotixMobile/FrotixTeste/FrotixTeste/Components/Layout/NavMenu.razor]
+[C:/Users/User/Desktop/FrotixMobile/FrotixMobile/FrotixTeste/FrotixTeste/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==

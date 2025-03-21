@@ -4,6 +4,7 @@
 @using Syncfusion.Blazor.Buttons
 @using Syncfusion.Blazor.Popups
 @using FrotixTeste.Models
+@using FrotixTeste.Services
 @inject VistoriaService vistoriaService
 @using System.Diagnostics;
 @using Syncfusion.Blazor.Inputs
@@ -13,14 +14,22 @@
 
 <h1>📋 Lista de Vistorias</h1>
 
+<SfToolbar>
+    <SfTextBox Placeholder="Placa" @bind-Value="FiltroPlaca"></SfTextBox>
+    <SfTextBox Placeholder="Motorista" @bind-Value="FiltroMotorista"></SfTextBox>
+    <SfTextBox Placeholder="Setor" @bind-Value="FiltroSetor"></SfTextBox>
+    <SfButton CssClass="e-primary" OnClick="FiltrarVistorias">🔍 Filtrar</SfButton>
+</SfToolbar>
+
 <SfGrid DataSource="@Vistorias" TItem="Vistorias"
-        AllowPaging="true" AllowSorting="true" AllowFiltering="false"
-        EditMode="EditMode.Dialog"
+        AllowPaging="true" AllowSorting="true"
+        AllowFiltering="false"
+        GridLines="GridLine.Both"
+        Width="100%"
         @ref="Grid">
 
     <GridColumns>
-        <!-- 🔹 Placa: Exibe o Nome ao invés do ID -->
-        <GridColumn HeaderText="Placa" Width="150">
+        <GridColumn HeaderText="Placa" Width="120">
             <Template>
                 @{
                     var vistoria = context as Vistorias;
@@ -29,8 +38,7 @@
             </Template>
         </GridColumn>
 
-        <!-- 🔹 Motorista: Exibe o Nome ao invés do ID -->
-        <GridColumn HeaderText="Motorista" Width="200">
+        <GridColumn HeaderText="Motorista" Width="180">
             <Template>
                 @{
                     var vistoria = context as Vistorias;
@@ -38,84 +46,116 @@
                 }
             </Template>
         </GridColumn>
-
-        <GridColumn Field="DataHoraInicio" HeaderText="Início" Width="180" Type="ColumnType.DateTime" Format="dd/MM/yyyy HH:mm"></GridColumn>
-        <GridColumn Field="DataHoraFinal" HeaderText="Fim" Width="180" Type="ColumnType.DateTime" Format="dd/MM/yyyy HH:mm"></GridColumn>
-        <GridColumn Field="KM" HeaderText="KM" Width="100"></GridColumn>
+        <GridColumn Field="NumeroFicha" HeaderText="N° Ficha" Width="120"></GridColumn>
+        <GridColumn Field="SetorSolicitante" HeaderText="Setor" Width="100"></GridColumn>
+        <GridColumn Field="Nome" HeaderText="Solicitante" Width="120"></GridColumn>
+        <GridColumn Field="Ramal" HeaderText="Ramal" Width="100"></GridColumn>
+        <GridColumn Field="NivelCombustivelInicial" HeaderText="Comb. Inicial" Width="120"></GridColumn>
+        <GridColumn Field="NivelCombustivelFinal" HeaderText="Comb. Final" Width="120"></GridColumn>
+        <GridColumn Field="CRLV" HeaderText="CRLV" Width="80"></GridColumn>
+        <GridColumn Field="CartaoAbastecimento" HeaderText="Cartão Abast." Width="120"></GridColumn>
+        <GridColumn Field="DataHoraInicio" HeaderText="Início" Format="dd/MM/yyyy HH:mm" Width="140"></GridColumn>
+        <GridColumn Field="DataHoraFinal" HeaderText="Fim" Format="dd/MM/yyyy HH:mm" Width="140"></GridColumn>
+        <GridColumn Field="KM" HeaderText="KM" Width="80"></GridColumn>
         <GridColumn Field="DanoAvaria" HeaderText="Dano/Avaria" Width="200"></GridColumn>
-
-        <!-- 🔹 Coluna para Botão de Ação (Editar) -->
         <GridColumn HeaderText="Ações" Width="120" TextAlign="TextAlign.Center">
             <Template>
                 @{
                     var vistoria = context as Vistorias;
                 }
-                <SfButton CssClass="e-small e-primary" OnClick="@(() => EditarVistoria(vistoria))">
-                    ✏️ Editar
-                </SfButton>
+                <div class="acao-buttons">
+                    <SfButton CssClass="e-small e-primary btn-edit" IconCss="e-icons e-edit" OnClick="@(() => EditarVistoria(vistoria))" />
+                    <SfButton CssClass="e-small e-danger btn-delete" IconCss="e-icons e-delete" OnClick="@(() => ConfirmarExclusao(vistoria))" />
+                </div>
             </Template>
         </GridColumn>
     </GridColumns>
 </SfGrid>
 
-
-<!-- 🔹 Diálogo para edição da Vistoria -->
+<!-- Diálogo para edição da Vistoria -->
 <SfDialog @bind-Visible="EditDialogVisible" Header="Editar Vistoria"
-          ShowCloseIcon="true" Width="500px" IsModal="true">
+          ShowCloseIcon="true" Width="600px" IsModal="true">
     <DialogTemplates>
         <Content>
-            <div class="form-row">
-                <label>Placa:</label>
-                <SfComboBox TValue="string" TItem="PlacaFields" DataSource="@Placas"
-                            @bind-Value="vistoriaAtual.PlacaID">
-                    <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
-                </SfComboBox>
-            </div>
+            <div class="form-container">
+                <div class="form-row">
+                    <label>Placa:</label>
+                    <SfComboBox TValue="Guid ?" TItem="PlacaFields" DataSource="@Placas"
+                                @bind-Value="vistoriaAtual.PlacaID">
+                        <ComboBoxFieldSettings Value="VeiculoId" Text="Placa"></ComboBoxFieldSettings>
+                    </SfComboBox>
 
-            <div class="form-row">
-                <label>Motorista:</label>
-                <SfComboBox TValue="string" TItem="MotoristaFields" DataSource="@Motoristas"
-                            @bind-Value="vistoriaAtual.MotoristaID">
-                    <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
-                </SfComboBox>
-            </div>
+                    <label>Motorista:</label>
+                    <SfComboBox TValue="Guid ?" TItem="MotoristaFields" DataSource="@Motoristas"
+                                @bind-Value="vistoriaAtual.MotoristaID">
+                        <ComboBoxFieldSettings Value="MotoristaID" Text="Nome"></ComboBoxFieldSettings>
+                    </SfComboBox>
+                </div>
 
-            <div class="form-row">
-                <label>Ponto Inicial:</label>
-                <SfComboBox TValue="string" TItem="PontoFields" DataSource="@Pontos"
-                            @bind-Value="vistoriaAtual.PontoID">
-                    <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
-                </SfComboBox>
-            </div>
+                <div class="form-row">
+                    <label>Número da Ficha:</label>
+                    <SfNumericTextBox @bind-Value="vistoriaAtual.NumeroFicha" TValue="int?"></SfNumericTextBox>
 
-            <div class="form-row">
-                <label>Ponto Final:</label>
-                <SfComboBox TValue="string" TItem="PontoFields" DataSource="@Pontos"
-                            @bind-Value="vistoriaAtual.PontoFinalID">
-                    <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
-                </SfComboBox>
-            </div>
+                    <label>Setor:</label>
+                    <SfTextBox @bind-Value="vistoriaAtual.SetorSolicitante"></SfTextBox>
+                </div>
 
-            <div class="form-row">
-                <label>Data Início:</label>
-                <SfDateTimePicker TValue="DateTime?" @bind-Value="vistoriaAtual.DataHoraInicio"></SfDateTimePicker>
-            </div>
+                <div class="form-row">
+                    <label>Nome:</label>
+                    <SfTextBox @bind-Value="vistoriaAtual.Nome"></SfTextBox>
 
-            <div class="form-row">
-                <label>Data Fim:</label>
-                <SfDateTimePicker TValue="DateTime?" @bind-Value="vistoriaAtual.DataHoraFinal"></SfDateTimePicker>
-            </div>
+                    <label>Ramal:</label>
+                    <SfTextBox @bind-Value="vistoriaAtual.Ramal"></SfTextBox>
+                </div>
 
-            <div class="form-row">
-                <label>KM:</label>
-                <SfTextBox @bind-Value="vistoriaAtual.KM"></SfTextBox>
-            </div>
+                <div class="form-row">
+                    <label><b>CRLV:</b></label>
+                    <SfCheckBox @bind-Checked="vistoriaAtual.CRLV"></SfCheckBox>
 
-            <div class="form-row">
-                <label>Dano/Avaria:</label>
-                <SfTextBox @bind-Value="vistoriaAtual.DanoAvaria"></SfTextBox>
-            </div>
+                    <label><b>Cartão de Abastecimento:</b></label>
+                    <SfCheckBox @bind-Checked="vistoriaAtual.CartaoAbastecimento"></SfCheckBox>
+                </div>
 
+                <div class="form-row">
+                    <label>Nível de Combustível Inicial:</label>
+                    <SfComboBox TValue="string" TItem="string" @bind-Value="vistoriaAtual.NivelCombustivelInicial"
+                                DataSource="@nivelCombustivelOpcoes">
+                    </SfComboBox>
+
+                    <label>Nível de Combustível Final:</label>
+                    <SfComboBox TValue="string" TItem="string" @bind-Value="vistoriaAtual.NivelCombustivelFinal"
+                                DataSource="@nivelCombustivelOpcoes">
+                    </SfComboBox>
+                </div>
+
+                <div class="form-row">
+                    <label>Rubrica:</label>
+                    <SfTextBox @bind-Value="vistoriaAtual.Rubrica"></SfTextBox>
+                </div>
+
+                <div class="form-row">
+                    <label>Fotos:</label>
+                    <div class="image-gallery">
+                        @foreach (var foto in vistoriaAtual.Fotos)
+                        {
+                            <img src="@foto" class="captured-media" width="100" height="100" />
+                        }
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label>Vídeos:</label>
+                    <div class="video-gallery">
+                        @foreach (var video in vistoriaAtual.Videos)
+                        {
+                            <video width="150" height="100" controls>
+                                <source src="@video" type="video/mp4">
+                                Seu navegador não suporta vídeos.
+                            </video>
+                        }
+                    </div>
+                </div>
+            </div>
         </Content>
 
         <FooterTemplate>
@@ -125,6 +165,133 @@
     </DialogTemplates>
 </SfDialog>
 
+<!-- Diálogo de confirmação de exclusão -->
+<SfDialog @bind-Visible="ConfirmDialogVisible" Width="400px" Header="Confirmar Exclusão"
+          ShowCloseIcon="true" IsModal="true">
+    <DialogTemplates>
+        <Content>
+            Tem certeza que deseja excluir esta vistoria?
+        </Content>
+        <FooterTemplate>
+            <SfButton CssClass="e-danger" OnClick="ExcluirVistoria">Sim, Excluir</SfButton>
+            <SfButton CssClass="e-outline" OnClick="() => ConfirmDialogVisible = false">Cancelar</SfButton>
+        </FooterTemplate>
+    </DialogTemplates>
+</SfDialog>
+
+<style>
+    /* estilo igual ao que você já tinha */
+    .visualizar-vistorias-container {
+        max-width: 98%;
+        margin: auto;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .visualizar-vistorias-container h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+    .filtro-box {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+
+        .filtro-box input, .filtro-box select {
+            width: 100%;
+            max-width: 250px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .filtro-box .btn-filtro {
+            background-color: #4c648e;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            .filtro-box .btn-filtro:hover {
+                background-color: #3a4e75;
+            }
+
+    .sf-grid {
+        margin-top: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .e-grid .e-headercell {
+        background: #4c648e;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .e-grid .e-row:nth-child(even) {
+        background: #f4f4f4;
+    }
+
+    .e-grid .e-row:nth-child(odd) {
+        background: #ffffff;
+    }
+
+    .e-grid .e-rowcell {
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .acao-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+        .acao-buttons .btn-edit {
+            background-color: #4c648e;
+            color: white;
+            padding: 6px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .acao-buttons .btn-delete {
+            background-color: #dc3545;
+            color: white;
+            padding: 6px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .acao-buttons .btn-edit:hover {
+            background-color: #3a4e75;
+        }
+
+        .acao-buttons .btn-delete:hover {
+            background-color: #b52b3a;
+        }
+</style>
 
 @code {
     private List<Vistorias> Vistorias = new();
@@ -133,7 +300,13 @@
     private List<PontoFields> Pontos = new();
     private SfGrid<Vistorias> Grid;
     private bool EditDialogVisible = false;
+    private bool ConfirmDialogVisible = false;
     private Vistorias vistoriaAtual = new();
+    private Vistorias vistoriaParaExcluir;
+    private List<string> nivelCombustivelOpcoes = new() { "Cheio", "3/4", "2/4", "1/4" };
+    private string FiltroPlaca;
+    private string FiltroMotorista;
+    private string FiltroSetor;
 
     protected override async Task OnInitializedAsync()
     {
@@ -144,59 +317,116 @@
         Debug.WriteLine($"📋 {Vistorias.Count} vistorias carregadas.");
     }
 
-    private string ObterPlacaNome(string? placaId)
+    private string ObterPlacaNome(Guid? veiculoId)
     {
-        if (string.IsNullOrEmpty(placaId)) return "Desconhecido";
-        var placa = Placas.FirstOrDefault(p => p.ID == placaId);
-        return placa?.Text ?? "Desconhecido";
+        if (!veiculoId.HasValue || veiculoId == Guid.Empty)
+            return "Desconhecido";
+
+        var placa = Placas.FirstOrDefault(p => p.VeiculoId == veiculoId.Value);
+        return placa?.Placa ?? "Desconhecido";
     }
 
-    private string ObterMotoristaNome(string? motoristaId)
+    private string ObterMotoristaNome(Guid? motoristaId)
     {
-        if (string.IsNullOrEmpty(motoristaId)) return "Desconhecido";
-        var motorista = Motoristas.FirstOrDefault(m => m.ID == motoristaId);
-        return motorista?.Text ?? "Desconhecido";
+        if (!motoristaId.HasValue || motoristaId == Guid.Empty)
+            return "Desconhecido";
+
+        var motorista = Motoristas.FirstOrDefault(m => m.MotoristaID == motoristaId.Value);
+        return motorista?.Nome ?? "Desconhecido";
+    }
+
+    private string ObterPontoNome(string pontoId)
+    {
+        var ponto = Pontos.FirstOrDefault(p => p.PontoID == pontoId);
+        return ponto?.Descricao ?? "Desconhecido";
     }
 
     private void EditarVistoria(Vistorias vistoria)
     {
         if (vistoria == null) return;
-        Debug.WriteLine($"📝 Editando vistoria: {vistoria.Id}");
 
         vistoriaAtual = new Vistorias
-            {
-                Id = vistoria.Id,
-                PlacaID = vistoria.PlacaID,
-                MotoristaID = vistoria.MotoristaID,
-                PontoID = vistoria.PontoID,  // ✅ Garante que PontoID seja copiado
-                PontoFinalID = vistoria.PontoFinalID, // ✅ Garante que PontoFinalID seja copiado
-                DataHoraInicio = vistoria.DataHoraInicio,
-                DataHoraFinal = vistoria.DataHoraFinal,
-                KM = vistoria.KM,
-                DanoAvaria = vistoria.DanoAvaria
-            };
+        {
+            Id = vistoria.Id,
+            PlacaID = vistoria.PlacaID ?? Guid.Empty,
+            MotoristaID = vistoria.MotoristaID ?? Guid.Empty,
+            PontoID = vistoria.PontoID,
+            PontoFinalID = vistoria.PontoFinalID,
+            NumeroFicha = vistoria.NumeroFicha,
+            DataHoraInicio = vistoria.DataHoraInicio,
+            DataHoraFinal = vistoria.DataHoraFinal,
+            CRLV = vistoria.CRLV,
+            CartaoAbastecimento = vistoria.CartaoAbastecimento,
+            NivelCombustivelInicial = vistoria.NivelCombustivelInicial,
+            NivelCombustivelFinal = vistoria.NivelCombustivelFinal,
+            SetorSolicitante = vistoria.SetorSolicitante,
+            Nome = vistoria.Nome,
+            Ramal = vistoria.Ramal,
+            KM = vistoria.KM,
+            DanoAvaria = vistoria.DanoAvaria,
+            Rubrica = vistoria.Rubrica,
+            Fotos = vistoria.Fotos ?? new List<string>(),
+            Videos = vistoria.Videos ?? new List<string>()
+        };
 
         EditDialogVisible = true;
     }
 
-
     private async Task SalvarEdicao()
     {
-        Debug.WriteLine($"💾 Salvando edição da vistoria: {vistoriaAtual.Id}");
-
+        Debug.WriteLine($"Salvando edição da vistoria ID: {vistoriaAtual.Id}");
         bool sucesso = await vistoriaService.AtualizarVistoriaAsync(vistoriaAtual);
 
         if (sucesso)
         {
-            Debug.WriteLine("✅ Vistoria atualizada com sucesso!");
+            Debug.WriteLine("✅ Edição salva com sucesso!");
             EditDialogVisible = false;
             Vistorias = await vistoriaService.ObterTodasVistoriasAsync();
             await Grid.Refresh();
         }
         else
         {
-            Debug.WriteLine("❌ Erro ao atualizar vistoria!");
+            Debug.WriteLine("❌ Falha ao salvar a edição!");
         }
     }
 
+    private void FiltrarVistorias()
+    {
+        Vistorias = Vistorias
+            .Where(v => string.IsNullOrEmpty(FiltroPlaca) ||
+                        ObterPlacaNome(v.PlacaID)!.Contains(FiltroPlaca, StringComparison.OrdinalIgnoreCase))
+            .Where(v => string.IsNullOrEmpty(FiltroMotorista) ||
+                        ObterMotoristaNome(v.MotoristaID)!.Contains(FiltroMotorista, StringComparison.OrdinalIgnoreCase))
+            .Where(v => string.IsNullOrEmpty(FiltroSetor) ||
+                        v.SetorSolicitante != null && v.SetorSolicitante.Contains(FiltroSetor, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+    }
+
+    private void ConfirmarExclusao(Vistorias vistoria)
+    {
+        vistoriaParaExcluir = vistoria;
+        ConfirmDialogVisible = true;
+    }
+
+    private async Task ExcluirVistoria()
+    {
+        if (vistoriaParaExcluir == null) return;
+
+        Debug.WriteLine($"🗑️ Excluindo vistoria ID: {vistoriaParaExcluir.Id}");
+
+        bool sucesso = await vistoriaService.ExcluirVistoriaAsync(vistoriaParaExcluir.Id);
+
+        if (sucesso)
+        {
+            Debug.WriteLine("✅ Vistoria excluída com sucesso!");
+            ConfirmDialogVisible = false;
+            Vistorias = await vistoriaService.ObterTodasVistoriasAsync();
+            await Grid.Refresh();
+        }
+        else
+        {
+            Debug.WriteLine("❌ Falha ao excluir a vistoria.");
+            ConfirmDialogVisible = false;
+        }
+    }
 }

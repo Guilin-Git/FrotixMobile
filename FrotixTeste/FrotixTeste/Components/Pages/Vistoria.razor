@@ -8,6 +8,7 @@
 @using Microsoft.Maui.Media
 @using System.Text.Json
 @using System.IO
+@using FrotixTeste.Services
 @inject VistoriaService vistoriaService
 @using System.Diagnostics;
 @using FrotixTeste.Models
@@ -21,16 +22,16 @@
     <div class="section">
         <div class="form-row">
             <label>Placa do Veículo:</label>
-            <SfComboBox TValue="string" TItem="PlacaFields" Placeholder="Selecione a Placa"
+            <SfComboBox TValue="Guid ?" TItem="PlacaFields" Placeholder="Selecione a Placa"
                         DataSource="@Placas" @bind-Value="vistoriaAtual.PlacaID">
-                <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
+                <ComboBoxFieldSettings Value="VeiculoId" Text="Placa"></ComboBoxFieldSettings>
             </SfComboBox>
         </div>
         <div class="form-row">
             <label>Motorista:</label>
-            <SfComboBox TValue="string" TItem="MotoristaFields" Placeholder="Selecione o Motorista"
+            <SfComboBox TValue="Guid?" TItem="MotoristaFields" Placeholder="Selecione o Motorista"
                         DataSource="@Motoristas" @bind-Value="vistoriaAtual.MotoristaID">
-                <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
+                <ComboBoxFieldSettings Value="MotoristaID" Text="Nome"></ComboBoxFieldSettings>
             </SfComboBox>
         </div>
         <div class="form-row">
@@ -44,7 +45,7 @@
     <div class="section">
         <div class="form-row">
             <label>Data/hora:</label>
-            <SfDateTimePicker TValue="DateTime?" Placeholder="Selecione a data/hora"
+            <SfDateTimePicker TValue="DateTime ?" Placeholder="Selecione a data/hora"
                               Min="@min" Max="@max" EnableMask="true" @bind-Value="vistoriaAtual.DataHoraInicio">
             </SfDateTimePicker>
         </div>
@@ -67,7 +68,7 @@
             <label>Ponto Inicial:</label>
             <SfComboBox TValue="string" TItem="PontoFields" Placeholder="Selecione o Ponto Inicial"
                         DataSource="@Pontos" @bind-Value="vistoriaAtual.PontoID">
-                <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
+                <ComboBoxFieldSettings Value="PontoID" Text="Descricao"></ComboBoxFieldSettings>
             </SfComboBox>
         </div>
     </div>
@@ -123,24 +124,24 @@
     <div class="section">
         <div class="form-row">
             <label>Data/hora:</label>
-            <SfDateTimePicker TValue="DateTime?" Placeholder="Selecione a data/hora"
+            <SfDateTimePicker TValue="DateTime ?" Placeholder="Selecione a data/hora"
                               Min="@min" Max="@max" EnableMask="true" @bind-Value="vistoriaAtual.DataHoraFinal">
             </SfDateTimePicker>
         </div>
         <div class="form-row">
             <label>Nível de combustível:</label>
             <div class="fuel-radios">
-                <SfRadioButton TChecked="string" Label="Cheio" Name="combustivelInicial" Value="Cheio" @bind-CheckedValue="vistoriaAtual.NivelCombustivelInicial"></SfRadioButton>
-                <SfRadioButton TChecked="string" Label="3/4" Name="combustivelInicial" Value="3/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelInicial"></SfRadioButton>
-                <SfRadioButton TChecked="string" Label="2/4" Name="combustivelInicial" Value="2/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelInicial"></SfRadioButton>
-                <SfRadioButton TChecked="string" Label="1/4" Name="combustivelInicial" Value="1/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelInicial"></SfRadioButton>
+                <SfRadioButton TChecked="string" Label="Cheio" Name="combustivelFinal" Value="Cheio" @bind-CheckedValue="vistoriaAtual.NivelCombustivelFinal"></SfRadioButton>
+                <SfRadioButton TChecked="string" Label="3/4" Name="combustivelFinal" Value="3/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelFinal"></SfRadioButton>
+                <SfRadioButton TChecked="string" Label="2/4" Name="combustivelFinal" Value="2/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelFinal"></SfRadioButton>
+                <SfRadioButton TChecked="string" Label="1/4" Name="combustivelFinal" Value="1/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelFinal"></SfRadioButton>
             </div>
         </div>
         <div class="form-row">
             <label>Ponto Final:</label>
             <SfComboBox TValue="string" TItem="PontoFields" Placeholder="Selecione o Ponto Final"
                         DataSource="@Pontos" @bind-Value="vistoriaAtual.PontoFinalID">
-                <ComboBoxFieldSettings Value="ID" Text="Text"></ComboBoxFieldSettings>
+                <ComboBoxFieldSettings Value="PontoID" Text="Descricao"></ComboBoxFieldSettings>
             </SfComboBox>
         </div>
     </div>
@@ -157,23 +158,24 @@
         <div class="image-gallery">
             @foreach (var image in vistoriaAtual.Fotos)
             {
-                <img src="@image" class="captured-media" width="100" height="100" />
+                    <img src="@image" class="captured-media" width="100" height="100" />
             }
         </div>
         <!-- Galeria de Vídeos -->
         <div class="video-gallery">
             @foreach (var video in vistoriaAtual.Videos)
             {
-                <video width="150" height="100" controls>
-                    <source src="@video" type="video/mp4">
-                    Seu navegador não suporta vídeos.
-                </video>
+                    <video width="150" height="100" controls>
+                        <source src="@video" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
             }
         </div>
-            <!-- Botão para Salvar a Vistoria -->
-            <SfButton OnClick="@SalvarVistoria">💾 Salvar Vistoria</SfButton>
-        </div>
+        <!-- Botão para Salvar a Vistoria -->
+        <SfButton OnClick="@SalvarVistoria">💾 Salvar Vistoria</SfButton>
+    </div>
 </div>
+
 
 
 <style>
