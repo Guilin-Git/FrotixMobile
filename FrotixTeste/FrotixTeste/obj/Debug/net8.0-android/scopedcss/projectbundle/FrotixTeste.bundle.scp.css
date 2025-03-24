@@ -182,3 +182,90 @@ main[b-s2et7f6a20] {
 .logo-adjust[b-z6ap1z397m] {
     margin-top: -5px;
 }
+/* /Components/Pages/Vistoria.razor.rz.scp.css */
+/* Geral */
+body[b-rnnxihrxod] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+label[b-rnnxihrxod] {
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: block;
+    color: #343a40;
+}
+
+input[b-rnnxihrxod], select[b-rnnxihrxod], textarea[b-rnnxihrxod] {
+    border-radius: 6px;
+}
+
+/* Container de cada sess�o */
+.form-section[b-rnnxihrxod] {
+    background-color: #fff;
+    padding: 24px;
+    margin: 16px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Agrupamento de campos */
+.checkbox-group[b-rnnxihrxod],
+.fuel-radios[b-rnnxihrxod] {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Multiline text */
+textarea.multiline[b-rnnxihrxod] {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Galerias de m�dia */
+.image-gallery[b-rnnxihrxod],
+.video-gallery[b-rnnxihrxod] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.captured-media[b-rnnxihrxod] {
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Bot�es */
+.e-btn[b-rnnxihrxod] {
+    margin-top: 10px;
+}
+
+/* T�tulo de se��o */
+h4[b-rnnxihrxod] {
+    margin-top: 20px;
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 4px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .form-section[b-rnnxihrxod] {
+        padding: 16px;
+    }
+
+    .checkbox-group[b-rnnxihrxod],
+    .fuel-radios[b-rnnxihrxod] {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

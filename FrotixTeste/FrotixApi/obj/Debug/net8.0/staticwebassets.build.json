@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "8b0RauXCZr/wPOT61tn1lWNtWOi9siIilm1o61nfWRg=",
+  "Source": "FrotixApi",
+  "BasePath": "_content/FrotixApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

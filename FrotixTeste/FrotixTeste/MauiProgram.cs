@@ -1,10 +1,9 @@
-﻿using FrotixTeste.Data;
-using FrotixTeste.Services;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+﻿using FrotixTeste.Services;
 using Microsoft.Extensions.Logging;
 using Syncfusion.Blazor;
 using Syncfusion.Licensing;
+using Microsoft.Extensions.DependencyInjection;
+
 
 namespace FrotixTeste
 {
@@ -12,9 +11,11 @@ namespace FrotixTeste
     {
         public static MauiApp CreateMauiApp()
         {
+            // ✅ Registro de licença do Syncfusion
             SyncfusionLicenseProvider.RegisterLicense("Mzc1MjE2NEAzMjM4MmUzMDJlMzBXTURCckpEa0UvMU9zQ1RCTzhLbTFITzVIVU5QUGl5cHVSdXpGSE9wTThZPQ==");
 
             var builder = MauiApp.CreateBuilder();
+
             builder
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
@@ -25,21 +26,11 @@ namespace FrotixTeste
             builder.Services.AddMauiBlazorWebView();
             builder.Services.AddSyncfusionBlazor();
 
-            // 🔹 Carregar `appsettings.json` corretamente dentro do `builder.Configuration`
-            builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-
-            // 🔹 Obter a ConnectionString do arquivo de configuração
-            string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-            // 🔹 Registrar o `DbContext` usando a ConnectionString carregada
-            builder.Services.AddDbContext<FrotixDbContext>(options =>
-                options.UseSqlServer(connectionString));
-
-            // 🔹 Registrar o `VistoriaService`
-            builder.Services.AddScoped<VistoriaService>();
-            builder.Services.AddMauiBlazorWebView();
-            builder.Services.AddSyncfusionBlazor();
-           
+            // ✅ Registrar o HttpClient já com BaseAddress para a API
+            builder.Services.AddHttpClient<VistoriaService>(client =>
+            {
+                client.BaseAddress = new Uri("http://172.20.10.5:5050/vistorias");
+            });
 
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();

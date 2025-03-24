@@ -1,79 +1,77 @@
-﻿using FrotixTeste.Data;
+﻿using System.Net.Http.Json;
 using FrotixTeste.Models;
-using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
 
 namespace FrotixTeste.Services
 {
     public class VistoriaService
     {
-        private readonly FrotixDbContext _context;
+        private readonly HttpClient _http;
 
-        public VistoriaService(FrotixDbContext context)
+        public VistoriaService(HttpClient http)
         {
-            _context = context;
+            _http = http;
         }
 
         public async Task<List<PlacaFields>> ObterPlacasAsync()
         {
-            return await _context.Veiculos.ToListAsync();  // 🔹 Corrigido para acessar "Veiculo"
+            return await _http.GetFromJsonAsync<List<PlacaFields>>("Vistorias/Placas") ?? new();
         }
 
         public async Task<List<MotoristaFields>> ObterMotoristasAsync()
         {
-            return await _context.Motoristas.ToListAsync();
+            return await _http.GetFromJsonAsync<List<MotoristaFields>>("Vistorias/Motoristas") ?? new();
         }
 
         public async Task<List<PontoFields>> ObterPontosAsync()
         {
-            return await _context.Pontos.ToListAsync();
+            return await _http.GetFromJsonAsync<List<PontoFields>>("Vistorias/Pontos") ?? new();
         }
 
         public async Task<List<Vistorias>> ObterTodasVistoriasAsync()
         {
-            return await _context.Vistorias.ToListAsync();
+            return await _http.GetFromJsonAsync<List<Vistorias>>("") ?? new();
         }
 
         public async Task<bool> SalvarVistoria(Vistorias vistoria)
         {
-            _context.Vistorias.Add(vistoria);
-            return await _context.SaveChangesAsync() > 0;
+            try
+            {
+                var response = await _http.PostAsJsonAsync("", vistoria);
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao salvar vistoria: {ex.Message}");
+                return false;
+            }
         }
 
         public async Task<bool> AtualizarVistoriaAsync(Vistorias vistoria)
         {
             try
             {
-                var vistoriaExistente = await _context.Vistorias.FindAsync(vistoria.Id);
-
-                if (vistoriaExistente == null)
-                {
-                    return false; // A vistoria não existe no banco de dados
-                }
-
-                // Atualiza os valores da vistoria existente
-                _context.Entry(vistoriaExistente).CurrentValues.SetValues(vistoria);
-
-                // Salva as alterações
-                await _context.SaveChangesAsync();
-                return true;
+                var response = await _http.PutAsJsonAsync($"{vistoria.Id}", vistoria);
+                return response.IsSuccessStatusCode;
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"Erro ao atualizar vistoria: {ex.Message}");
+                Console.WriteLine($"Erro ao atualizar vistoria: {ex.Message}");
                 return false;
             }
         }
 
-
-
         public async Task<bool> ExcluirVistoriaAsync(Guid id)
         {
-            var vistoria = await _context.Vistorias.FindAsync(id);
-            if (vistoria == null) return false;
-
-            _context.Vistorias.Remove(vistoria);
-            return await _context.SaveChangesAsync() > 0;
+            try
+            {
+                var response = await _http.DeleteAsync($"{id}");
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao excluir vistoria: {ex.Message}");
+                return false;
+            }
         }
     }
 }

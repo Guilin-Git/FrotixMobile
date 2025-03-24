@@ -1,0 +1,8 @@
+C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixApi\obj\Debug\net9.0\FrotixApi.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixApi\obj\Debug\net9.0\FrotixApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixApi\obj\Debug\net9.0\FrotixApi.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixApi\obj\Debug\net9.0\FrotixApi.AssemblyInfo.cs
+C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixApi\obj\Debug\net9.0\FrotixApi.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixApi\obj\Debug\net9.0\FrotixApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixApi\obj\Debug\net9.0\FrotixApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixApi\obj\Debug\net9.0\FrotixApi.sourcelink.json

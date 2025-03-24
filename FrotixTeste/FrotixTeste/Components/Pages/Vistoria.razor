@@ -13,354 +13,190 @@
 @using System.Diagnostics;
 @using FrotixTeste.Models
 
-<PageTitle>Vistoria</PageTitle>
-<div class="inspection-form">
-    <!-- Título Principal -->
-    <h1>FICHA DE VISTORIA DE VEÍCULOS</h1>
+<h4>Vistoria</h4>
 
-    <!-- Seção 1: Dados principais -->
-    <div class="section">
-        <div class="form-row">
-            <label>Placa do Veículo:</label>
-            <SfComboBox TValue="Guid ?" TItem="PlacaFields" Placeholder="Selecione a Placa"
-                        DataSource="@Placas" @bind-Value="vistoriaAtual.PlacaID">
-                <ComboBoxFieldSettings Value="VeiculoId" Text="Placa"></ComboBoxFieldSettings>
-            </SfComboBox>
-        </div>
-        <div class="form-row">
-            <label>Motorista:</label>
-            <SfComboBox TValue="Guid?" TItem="MotoristaFields" Placeholder="Selecione o Motorista"
-                        DataSource="@Motoristas" @bind-Value="vistoriaAtual.MotoristaID">
-                <ComboBoxFieldSettings Value="MotoristaID" Text="Nome"></ComboBoxFieldSettings>
-            </SfComboBox>
-        </div>
-        <div class="form-row">
-            <label>Número da ficha:</label>
-            <SfNumericTextBox TValue="int?" @bind-Value="vistoriaAtual.NumeroFicha"></SfNumericTextBox>
-        </div>
-    </div>
+@if (carregando)
+{
+    <p>🔄 Carregando dados...</p>
+}
+else
+{
+    <SfTab>
+        <TabItems>
+            <TabItem Header="Dados Iniciais">
+                <ContentTemplate>
+                    <div class="form-section">
+                        <!-- Placa -->
+                        <SfComboBox TValue="Guid ?" TItem="PlacaFields" Placeholder="Selecione a Placa"
+                                    DataSource="@Placas" @bind-Value="vistoriaAtual.PlacaID"
+                                    EnableVirtualization="true">
+                            <ComboBoxFieldSettings Value="VeiculoId" Text="Placa"></ComboBoxFieldSettings>
+                        </SfComboBox>
 
-    <!-- Seção: Vistoria Inicial -->
-    <div class="section-title">VISTORIA INICIAL</div>
-    <div class="section">
-        <div class="form-row">
-            <label>Data/hora:</label>
-            <SfDateTimePicker TValue="DateTime ?" Placeholder="Selecione a data/hora"
-                              Min="@min" Max="@max" EnableMask="true" @bind-Value="vistoriaAtual.DataHoraInicio">
-            </SfDateTimePicker>
-        </div>
-        <div class="form-row">
-            <label>CRLV:</label>
-            <SfCheckBox @bind-Checked="vistoriaAtual.CRLV" Label=" "></SfCheckBox>
-            <label>Cartão de abastecimento:</label>
-            <SfCheckBox @bind-Checked="vistoriaAtual.CartaoAbastecimento" Label=" "></SfCheckBox>
-        </div>
-        <div class="form-row">
-            <label>Nível de combustível:</label>
-            <div class="fuel-radios">
-                <SfRadioButton TChecked="string" Label="Cheio" Name="combustivelInicial" Value="Cheio" @bind-CheckedValue="vistoriaAtual.NivelCombustivelInicial"></SfRadioButton>
-                <SfRadioButton TChecked="string" Label="3/4" Name="combustivelInicial" Value="3/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelInicial"></SfRadioButton>
-                <SfRadioButton TChecked="string" Label="2/4" Name="combustivelInicial" Value="2/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelInicial"></SfRadioButton>
-                <SfRadioButton TChecked="string" Label="1/4" Name="combustivelInicial" Value="1/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelInicial"></SfRadioButton>
-            </div>
-        </div>
-        <div class="form-row">
-            <label>Ponto Inicial:</label>
-            <SfComboBox TValue="string" TItem="PontoFields" Placeholder="Selecione o Ponto Inicial"
-                        DataSource="@Pontos" @bind-Value="vistoriaAtual.PontoID">
-                <ComboBoxFieldSettings Value="PontoID" Text="Descricao"></ComboBoxFieldSettings>
-            </SfComboBox>
-        </div>
-    </div>
+                        <!-- Motorista -->
+                        <SfComboBox TValue="Guid?" TItem="MotoristaFields"
+                                    Placeholder="Selecione o Motorista"
+                                    DataSource="@Motoristas"
+                                    @bind-Value="vistoriaAtual.MotoristaID"
+                                    EnableVirtualization="true">
+                            <ComboBoxFieldSettings Value="MotoristaID" Text="Nome"></ComboBoxFieldSettings>
+                        </SfComboBox>
 
-    <!-- Seção: Tabela de Setor Solicitante, Nome, etc. -->
-    <div class="section">
-        <table class="request-table">
-            <thead>
-                <tr>
-                    <th>Setor Solicitante</th>
-                    <th>Nome</th>
-                    <th>Ramal</th>
-                    <th>KM</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <SfTextBox Placeholder="Setor Solicitante..." @bind-Value="vistoriaAtual.SetorSolicitante"></SfTextBox>
-                    </td>
-                    <td>
-                        <SfTextBox Placeholder="Nome..." @bind-Value="vistoriaAtual.Nome"></SfTextBox>
-                    </td>
-                    <td>
-                        <SfTextBox Placeholder="Ramal..." @bind-Value="vistoriaAtual.Ramal"></SfTextBox>
-                    </td>
-                    <td>
-                        <SfTextBox Placeholder="KM..." @bind-Value="vistoriaAtual.KM"></SfTextBox>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+                        <!-- Número da Ficha -->
+                        <SfNumericTextBox TValue="int?" Placeholder="Número da Ficha" @bind-Value="vistoriaAtual.NumeroFicha" />
+                    </div>
+                </ContentTemplate>
+            </TabItem>
 
-    <!-- Seção: Dano/Avaria -->
-    <div class="section">
-        <div class="form-row-vertical">
-            <label>Dano ou Avaria:</label>
-            <SfTextBox Placeholder="Dano ou avaria..." CssClass="multiline" Multiline="true" @bind-Value="vistoriaAtual.DanoAvaria"></SfTextBox>
-        </div>
-    </div>
+            <TabItem Header="Vistoria Inicial">
+                <h4>Vistoria Inicial</h4>
+                <ContentTemplate>
+                    <div class="form-section">
+                        <!-- Data/Hora Inicial -->
+                        <SfDateTimePicker TValue="DateTime?" Placeholder="Data/Hora Inicial"
+                                          Min="@min" Max="@max" EnableMask="true"
+                                          @bind-Value="vistoriaAtual.DataHoraInicio" />
 
-    <!-- Seção: Rubrica -->
-    <div class="section">
-        <div class="form-row">
-            <label>Rubrica:</label>
-            <SfTextBox Placeholder="Rubrica..." @bind-Value="vistoriaAtual.Rubrica"></SfTextBox>
-        </div>
-    </div>
+                        <!-- CRLV e Cartão de Abastecimento -->
+                        <div class="checkbox-group">
+                            <label>CRLV:</label>
+                            <SfCheckBox @bind-Checked="vistoriaAtual.CRLV" Label="CRLV"></SfCheckBox>
+                            <label>Cartão de Abastecimento:</label>
+                            <SfCheckBox @bind-Checked="vistoriaAtual.CartaoAbastecimento" Label="Cartão de Abastecimento"></SfCheckBox>
+                        </div>
 
-    <!-- Seção: Vistoria Final -->
-    <div class="section-title">VISTORIA FINAL</div>
-    <div class="section">
-        <div class="form-row">
-            <label>Data/hora:</label>
-            <SfDateTimePicker TValue="DateTime ?" Placeholder="Selecione a data/hora"
-                              Min="@min" Max="@max" EnableMask="true" @bind-Value="vistoriaAtual.DataHoraFinal">
-            </SfDateTimePicker>
-        </div>
-        <div class="form-row">
-            <label>Nível de combustível:</label>
-            <div class="fuel-radios">
-                <SfRadioButton TChecked="string" Label="Cheio" Name="combustivelFinal" Value="Cheio" @bind-CheckedValue="vistoriaAtual.NivelCombustivelFinal"></SfRadioButton>
-                <SfRadioButton TChecked="string" Label="3/4" Name="combustivelFinal" Value="3/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelFinal"></SfRadioButton>
-                <SfRadioButton TChecked="string" Label="2/4" Name="combustivelFinal" Value="2/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelFinal"></SfRadioButton>
-                <SfRadioButton TChecked="string" Label="1/4" Name="combustivelFinal" Value="1/4" @bind-CheckedValue="vistoriaAtual.NivelCombustivelFinal"></SfRadioButton>
-            </div>
-        </div>
-        <div class="form-row">
-            <label>Ponto Final:</label>
-            <SfComboBox TValue="string" TItem="PontoFields" Placeholder="Selecione o Ponto Final"
-                        DataSource="@Pontos" @bind-Value="vistoriaAtual.PontoFinalID">
-                <ComboBoxFieldSettings Value="PontoID" Text="Descricao"></ComboBoxFieldSettings>
-            </SfComboBox>
-        </div>
-    </div>
+                        <!-- Nível de Combustível Inicial -->
+                        <label>Nível de Combustível Inicial:</label>
+                        <div class="fuel-radios">
+                            @foreach (var nivel in combustivelNiveis)
+                            {
+                                <SfRadioButton TChecked="string" Label="@nivel" Name="nivelInicial"
+                                               Value="@nivel" @bind-CheckedValue="vistoriaAtual.NivelCombustivelInicial" />
+                            }
+                        </div>
 
-    <!-- Seção: Captura de Mídia -->
-    <div class="section">
-        <div class="form-row">
-            <label>Capturar Mídia:</label>
-            <SfButton OnClick="@CapturePhoto">📷 Tirar Foto</SfButton>
-            <SfButton OnClick="@CaptureVideo">🎥 Gravar Vídeo</SfButton>
-        </div>
+                        <!-- Ponto Inicial -->
+                        <SfComboBox TValue="string" TItem="PontoFields" Placeholder="Ponto Inicial"
+                                    DataSource="@Pontos" @bind-Value="vistoriaAtual.PontoID"
+                                    EnableVirtualization="true">
+                            <ComboBoxFieldSettings Value="PontoID" Text="Descricao"></ComboBoxFieldSettings>
+                        </SfComboBox>
+                    </div>
+                </ContentTemplate>
+            </TabItem>
 
-        <!-- Galeria de Imagens -->
-        <div class="image-gallery">
-            @foreach (var image in vistoriaAtual.Fotos)
-            {
-                    <img src="@image" class="captured-media" width="100" height="100" />
-            }
-        </div>
-        <!-- Galeria de Vídeos -->
-        <div class="video-gallery">
-            @foreach (var video in vistoriaAtual.Videos)
-            {
-                    <video width="150" height="100" controls>
-                        <source src="@video" type="video/mp4">
-                        Seu navegador não suporta vídeos.
-                    </video>
-            }
-        </div>
-        <!-- Botão para Salvar a Vistoria -->
-        <SfButton OnClick="@SalvarVistoria">💾 Salvar Vistoria</SfButton>
-    </div>
-</div>
+            <TabItem Header="Solicitante">
+                <ContentTemplate>
+                    <div class="form-section">
+                        <SfTextBox Placeholder="Setor Solicitante" @bind-Value="vistoriaAtual.SetorSolicitante" />
+                        <SfTextBox Placeholder="Nome" @bind-Value="vistoriaAtual.Nome" />
+                        <SfTextBox Placeholder="Ramal" @bind-Value="vistoriaAtual.Ramal" />
+                        <SfTextBox Placeholder="KM" @bind-Value="vistoriaAtual.KM" />
+                    </div>
+                </ContentTemplate>
+            </TabItem>
 
 
+            <h4>Vistoria Final</h4>
+            <TabItem Header="Dano / Final">
+                <ContentTemplate>
+                    <div class="form-section">
+                        <SfTextBox Placeholder="Dano ou Avaria..." Multiline="true" CssClass="multiline"
+                                   @bind-Value="vistoriaAtual.DanoAvaria" />
+                        <SfTextBox Placeholder="Rubrica" @bind-Value="vistoriaAtual.Rubrica" />
 
-<style>
-    /* ----- Reset básico ----- */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+                        <!-- Data/Hora Final -->
+                        <SfDateTimePicker TValue="DateTime?" Placeholder="Data/Hora Final"
+                                          Min="@min" Max="@max" EnableMask="true"
+                                          @bind-Value="vistoriaAtual.DataHoraFinal" />
 
-    /* ----- Corpo e container principal ----- */
-    body {
-        font-family: Arial, sans-serif;
-        /* Caso queira limitar a largura total:
-        max-width: 900px;
-        margin: 0 auto;
-        */
-    }
+                        <!-- Nível de Combustível Final -->
+                        <label>Nível de Combustível Final:</label>
+                        <div class="fuel-radios">
+                            @foreach (var nivel in combustivelNiveis)
+                            {
+                                <SfRadioButton TChecked="string" Label="@nivel" Name="nivelFinal"
+                                               Value="@nivel" @bind-CheckedValue="vistoriaAtual.NivelCombustivelFinal" />
+                            }
+                        </div>
 
-    .inspection-form {
-        padding: 1rem;
-        border: 1px solid #ccc;
-        margin: 1rem auto;
-        max-width: 800px; /* Ajuste a largura conforme desejar */
-        background-color: #fff;
-    }
+                        <!-- Ponto Final -->
+                        <SfComboBox TValue="string" TItem="PontoFields" Placeholder="Ponto Final"
+                                    DataSource="@Pontos" @bind-Value="vistoriaAtual.PontoFinalID"
+                                    EnableVirtualization="true">
+                            <ComboBoxFieldSettings Value="PontoID" Text="Descricao"></ComboBoxFieldSettings>
+                        </SfComboBox>
+                    </div>
+                </ContentTemplate>
+            </TabItem>
 
-    /* ----- Cabeçalhos ----- */
-    .inspection-form h1 {
-        text-align: center;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-        border-bottom: 2px solid #000;
-        padding-bottom: 0.5rem;
-    }
+            <TabItem Header="Mídia">
+                <ContentTemplate>
+                    <div class="form-section">
+                        <SfButton OnClick="CapturePhoto">📷 Tirar Foto</SfButton>
+                        <SfButton OnClick="CaptureVideo">🎥 Gravar Vídeo</SfButton>
 
-    .section-title {
-        margin-top: 2rem;
-        margin-bottom: 0.5rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 1.1rem;
-        border-bottom: 2px solid #000;
-        padding-bottom: 0.3rem;
-    }
+                        <h4>Fotos:</h4>
+                        <div class="image-gallery">
+                            @foreach (var foto in vistoriaAtual.Fotos)
+                            {
+                                <img src="@foto" width="100" height="100" class="captured-media" />
+                            }
+                        </div>
 
-    /* ----- Seções e linhas de formulário ----- */
-    .section {
-        border: 1px solid #ccc;
-        margin-bottom: 1rem;
-        padding: 0.75rem;
-    }
+                        <h4>Vídeos:</h4>
+                        <div class="video-gallery">
+                            @foreach (var video in vistoriaAtual.Videos)
+                            {
+                                <video width="150" height="100" controls>
+                                    <source src="@video" type="video/mp4">
+                                </video>
+                            }
+                        </div>
 
-    .form-row {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-
-    /* Variante vertical (para textarea / multiline) */
-    .form-row-vertical {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-    }
-
-    /* ----- Rótulos ----- */
-    .form-row label,
-    .form-row-vertical label {
-        width: 150px;
-        font-weight: bold;
-        margin-right: 0.5rem;
-        margin-bottom: 0.25rem; /* Para .form-row-vertical */
-    }
-
-    /* ----- Inputs (Syncfusion) ----- */
-    .form-row .e-input,
-    .form-row .e-input-group.e-control-wrapper .e-input,
-    .form-row .e-checkbox-wrapper,
-    .form-row .e-radio-wrapper,
-    .form-row-vertical .e-input,
-    .form-row-vertical .e-input-group.e-control-wrapper .e-input {
-        flex: 1;
-        min-width: 0;
-    }
-
-    /* Ajustes para combos e numeric textboxes */
-    .e-input-group.e-control-wrapper,
-    .e-float-input.e-control-wrapper {
-        width: 100% !important;
-    }
-
-    /* Se quiser um visual de borda/padding diferente nos inputs: */
-    /*
-    .e-input, .e-input-group.e-control-wrapper .e-input {
-        border-radius: 4px;
-        border: 1px solid #999;
-        padding: 0.35rem;
-    }
-    */
-
-    /* ----- Tabela (Setor, Nome, Ramal, KM) ----- */
-    .request-table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    .request-table th {
-        text-align: left;
-        font-weight: bold;
-        padding: 0.5rem;
-        border-bottom: 2px solid #000;
-    }
-
-    .request-table td {
-        padding: 0.5rem;
-        border-bottom: 1px solid #ccc;
-    }
-
-    /* Força as TextBox da tabela ocuparem 100% na célula */
-    .request-table .e-input-group.e-control-wrapper {
-        width: 100% !important;
-    }
-
-    /* ----- Dano/Avaria (multiline) ----- */
-    .multiline.e-input {
-        height: 60px; /* Aumente se quiser mais espaço de digitação */
-        resize: none; /* Desabilita o redimensionamento manual */
-    }
-
-    /* ----- Combustível (radios) ----- */
-    .fuel-radios {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin-left: 0.5rem;
-    }
-
-    /* Remove label textual do SfCheckBox e SfRadioButton (se quiser),
-       pois já estamos usando fora. Exemplo:
-       .e-checkbox-wrapper .e-label, .e-radio-wrapper .e-label { display: none; }
-    */
-
-    /* Ajustes ao label do checkbox/radio se preferir algo mais suave */
-    .e-checkbox-wrapper .e-label,
-    .e-radio-wrapper .e-label {
-        margin-left: 4px;
-        font-weight: normal;
-    }
-
-    .image-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .captured-media {
-        border: 2px solid #ccc;
-        border-radius: 5px;
-        padding: 5px;
-        background-color: #f9f9f9;
-    }
-
-</style>
+                        <SfButton CssClass="e-success" OnClick="SalvarVistoria">💾 Salvar</SfButton>
+                    </div>
+                </ContentTemplate>
+            </TabItem>
+        </TabItems>
+    </SfTab>
+}
 
 @code {
+    private bool carregando = true;
     private List<PlacaFields> Placas = new();
     private List<MotoristaFields> Motoristas = new();
     private List<PontoFields> Pontos = new();
-
+    private List<string> combustivelNiveis = new() { "Cheio", "3/4", "2/4", "1/4" };
+    private Vistorias vistoriaAtual = new();
     public DateTime min { get; set; } = DateTime.Now.AddYears(-5);
     public DateTime max { get; set; } = DateTime.Now.AddYears(5);
 
-    private Vistorias vistoriaAtual = new Vistorias(); // 🔹 Agora ele reconhece a classe corretamente
-
-
     protected override async Task OnInitializedAsync()
     {
-        Placas = await vistoriaService.ObterPlacasAsync();
-        Motoristas = await vistoriaService.ObterMotoristasAsync();
-        Pontos = await vistoriaService.ObterPontosAsync();
+        try
+        {
+            // Carregar dados da API
+            Placas = await vistoriaService.ObterPlacasAsync();
+            Motoristas = await vistoriaService.ObterMotoristasAsync();
+            Pontos = await vistoriaService.ObterPontosAsync();
+
+            Debug.WriteLine($"Placas carregadas: {Placas.Count}");
+            Debug.WriteLine($"Motoristas carregados: {Motoristas.Count}");
+            Debug.WriteLine($"Pontos carregados: {Pontos.Count}");
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Erro ao carregar dados: {ex.Message}");
+        }
+        finally
+        {
+            carregando = false; // Muda o estado para não mostrar mais "Carregando"
+            StateHasChanged(); // Força a atualização da tela
+        }
     }
 
+    // Métodos de captura de foto e vídeo
     private async Task CapturePhoto()
     {
         try
@@ -369,32 +205,11 @@
             if (photo != null)
             {
                 var filePath = Path.Combine(FileSystem.AppDataDirectory, photo.FileName);
+                using var stream = await photo.OpenReadAsync();
+                using var newStream = File.OpenWrite(filePath);
+                await stream.CopyToAsync(newStream);
 
-                // 🔹 Usa um bloco "using" para garantir que o stream será fechado corretamente
-                using (var stream = await photo.OpenReadAsync())
-                {
-                    using var newStream = File.OpenWrite(filePath);
-                    await stream.CopyToAsync(newStream);
-                } // <-- Aqui o stream será fechado automaticamente ✅
-
-                Debug.WriteLine($"📸 Foto capturada em: {filePath}");
-
-                if (File.Exists(filePath))
-                {
-                    Debug.WriteLine("✅ Foto salva com sucesso!");
-                }
-                else
-                {
-                    Debug.WriteLine("❌ ERRO: A foto não foi encontrada!");
-                }
-
-                // 🔹 Converte a imagem para Base64 antes de adicionar na lista
-                byte[] imageBytes = File.ReadAllBytes(filePath);
-                string base64Image = Convert.ToBase64String(imageBytes);
-                string imageDataUrl = $"data:image/jpeg;base64,{base64Image}";
-
-                vistoriaAtual.Fotos.Add(imageDataUrl);
-
+                vistoriaAtual.Fotos.Add(filePath); // ⬅️ usa caminho local
             }
         }
         catch (Exception ex)
@@ -403,74 +218,42 @@
         }
     }
 
-
-
-        private async Task CaptureVideo()
+    private async Task CaptureVideo()
+    {
+        try
         {
-            try
+            var video = await MediaPicker.CaptureVideoAsync();
+            if (video != null)
             {
-                var video = await MediaPicker.CaptureVideoAsync();
-                if (video != null)
-                {
-                    var filePath = Path.Combine(FileSystem.AppDataDirectory, video.FileName);
+                var filePath = Path.Combine(FileSystem.AppDataDirectory, video.FileName);
+                using var stream = await video.OpenReadAsync();
+                using var newStream = File.OpenWrite(filePath);
+                await stream.CopyToAsync(newStream);
 
-                    using (var stream = await video.OpenReadAsync())
-                    {
-                        using var newStream = File.OpenWrite(filePath);
-                        await stream.CopyToAsync(newStream);
-                    }
-
-                    Debug.WriteLine($"🎥 Vídeo capturado em: {filePath}");
-
-                    if (File.Exists(filePath))
-                    {
-                        Debug.WriteLine("✅ Vídeo salvo com sucesso!");
-
-                        // 🔹 Convertendo para Base64
-                        byte[] videoBytes = File.ReadAllBytes(filePath);
-                        string base64Video = Convert.ToBase64String(videoBytes);
-                        string videoDataUrl = $"data:video/mp4;base64,{base64Video}";
-
-                        vistoriaAtual.Videos.Add(videoDataUrl);
-                    }
-                    else
-                    {
-                        Debug.WriteLine("❌ ERRO: O vídeo não foi encontrado!");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"⚠️ Erro ao capturar vídeo: {ex.Message}");
+                vistoriaAtual.Videos.Add(filePath); // ⬅️ usa caminho local
             }
         }
-
-
-
-        private async Task SalvarVistoria()
+        catch (Exception ex)
         {
-            try
-            {
-                Debug.WriteLine("📝 Salvando vistoria no banco...");
-
-                // Converta a lista de vídeos para JSON (caso precise salvar múltiplos vídeos no banco)
-                string videosJson = JsonSerializer.Serialize(vistoriaAtual.Videos);
-                vistoriaAtual.Videos = new List<string> { videosJson };
-
-                bool sucesso = await vistoriaService.SalvarVistoria(vistoriaAtual);
-                if (sucesso)
-                {
-                    Debug.WriteLine("✅ Vistoria salva com sucesso!");
-                }
-                else
-                {
-                    Debug.WriteLine("❌ ERRO ao salvar a vistoria.");
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"⚠️ ERRO ao salvar vistoria: {ex.Message}");
-            }
+            Debug.WriteLine($"⚠️ Erro ao capturar vídeo: {ex.Message}");
         }
+    }
 
+    private async Task SalvarVistoria()
+    {
+        try
+        {
+            Debug.WriteLine("📝 Salvando vistoria...");
+            bool sucesso = await vistoriaService.SalvarVistoria(vistoriaAtual);
+
+            if (sucesso)
+                Debug.WriteLine("✅ Vistoria salva com sucesso!");
+            else
+                Debug.WriteLine("❌ Erro ao salvar vistoria.");
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"❌ Erro ao salvar: {ex.Message}");
+        }
+    }
 }

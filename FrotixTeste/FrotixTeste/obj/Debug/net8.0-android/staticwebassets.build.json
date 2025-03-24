@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tJfPtQhHDmn7rtQXf//gJ36OI4dCCrEFsVwG28iITLA=",
+  "Hash": "cF1iFD+Rwsw65LeRh+cIEK37cgf1tuKVS7ZtASNrSks=",
   "Source": "FrotixTeste",
   "BasePath": "/",
   "Mode": "Root",
@@ -2887,8 +2887,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "3qw9qsns9t",
-      "Integrity": "68dRQj9UgnQoVZpDthYMqCF78uJEl/WI6RykELZP7BU=",
+      "Fingerprint": "5bftjnkr3n",
+      "Integrity": "P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\FrotixTeste.styles.css"
@@ -2908,8 +2908,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "3qw9qsns9t",
-      "Integrity": "68dRQj9UgnQoVZpDthYMqCF78uJEl/WI6RykELZP7BU=",
+      "Fingerprint": "5bftjnkr3n",
+      "Integrity": "P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\FrotixTeste.bundle.scp.css"
@@ -14523,7 +14523,7 @@
       ]
     },
     {
-      "Route": "FrotixTeste.3qw9qsns9t.bundle.scp.css",
+      "Route": "FrotixTeste.5bftjnkr3n.bundle.scp.css",
       "AssetFile": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\FrotixTeste.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -14533,7 +14533,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5540"
+          "Value": "7328"
         },
         {
           "Name": "Content-Type",
@@ -14541,11 +14541,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"68dRQj9UgnQoVZpDthYMqCF78uJEl/WI6RykELZP7BU=\""
+          "Value": "\"P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 16:33:47 GMT"
+          "Value": "Mon, 24 Mar 2025 16:48:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14555,7 +14555,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3qw9qsns9t"
+          "Value": "5bftjnkr3n"
         },
         {
           "Name": "label",
@@ -14563,12 +14563,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-68dRQj9UgnQoVZpDthYMqCF78uJEl/WI6RykELZP7BU="
+          "Value": "sha256-P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY="
         }
       ]
     },
     {
-      "Route": "FrotixTeste.3qw9qsns9t.styles.css",
+      "Route": "FrotixTeste.5bftjnkr3n.styles.css",
       "AssetFile": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\FrotixTeste.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -14578,7 +14578,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5540"
+          "Value": "7328"
         },
         {
           "Name": "Content-Type",
@@ -14586,11 +14586,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"68dRQj9UgnQoVZpDthYMqCF78uJEl/WI6RykELZP7BU=\""
+          "Value": "\"P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 16:33:47 GMT"
+          "Value": "Mon, 24 Mar 2025 16:48:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14600,7 +14600,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3qw9qsns9t"
+          "Value": "5bftjnkr3n"
         },
         {
           "Name": "label",
@@ -14608,7 +14608,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-68dRQj9UgnQoVZpDthYMqCF78uJEl/WI6RykELZP7BU="
+          "Value": "sha256-P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY="
         }
       ]
     },
@@ -14623,7 +14623,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5540"
+          "Value": "7328"
         },
         {
           "Name": "Content-Type",
@@ -14631,11 +14631,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"68dRQj9UgnQoVZpDthYMqCF78uJEl/WI6RykELZP7BU=\""
+          "Value": "\"P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 16:33:47 GMT"
+          "Value": "Mon, 24 Mar 2025 16:48:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14645,7 +14645,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-68dRQj9UgnQoVZpDthYMqCF78uJEl/WI6RykELZP7BU="
+          "Value": "sha256-P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY="
         }
       ]
     },
@@ -14660,7 +14660,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5540"
+          "Value": "7328"
         },
         {
           "Name": "Content-Type",
@@ -14668,11 +14668,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"68dRQj9UgnQoVZpDthYMqCF78uJEl/WI6RykELZP7BU=\""
+          "Value": "\"P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 16:33:47 GMT"
+          "Value": "Mon, 24 Mar 2025 16:48:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14682,7 +14682,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-68dRQj9UgnQoVZpDthYMqCF78uJEl/WI6RykELZP7BU="
+          "Value": "sha256-P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY="
         }
       ]
     },

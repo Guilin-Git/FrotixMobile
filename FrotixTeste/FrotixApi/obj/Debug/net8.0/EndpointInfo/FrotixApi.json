@@ -1,0 +1,394 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "FrotixApi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/Vistorias/placas": {
+      "get": {
+        "tags": [
+          "Vistorias"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlacaFields"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlacaFields"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlacaFields"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Vistorias/motoristas": {
+      "get": {
+        "tags": [
+          "Vistorias"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MotoristaFields"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MotoristaFields"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MotoristaFields"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Vistorias/pontos": {
+      "get": {
+        "tags": [
+          "Vistorias"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PontoFields"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PontoFields"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PontoFields"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Vistorias": {
+      "get": {
+        "tags": [
+          "Vistorias"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Vistorias"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Vistorias"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Vistorias"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Vistorias"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Vistorias"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Vistorias"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Vistorias"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Vistorias/{id}": {
+      "put": {
+        "tags": [
+          "Vistorias"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Vistorias"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Vistorias"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Vistorias"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Vistorias"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "MotoristaFields": {
+        "type": "object",
+        "properties": {
+          "motoristaID": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlacaFields": {
+        "type": "object",
+        "properties": {
+          "veiculoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "placa": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PontoFields": {
+        "type": "object",
+        "properties": {
+          "pontoID": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Vistorias": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "placaID": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "motoristaID": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "pontoID": {
+            "type": "string",
+            "nullable": true
+          },
+          "pontoFinalID": {
+            "type": "string",
+            "nullable": true
+          },
+          "numeroFicha": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dataHoraInicio": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataHoraFinal": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "crlv": {
+            "type": "boolean"
+          },
+          "cartaoAbastecimento": {
+            "type": "boolean"
+          },
+          "nivelCombustivelInicial": {
+            "type": "string",
+            "nullable": true
+          },
+          "nivelCombustivelFinal": {
+            "type": "string",
+            "nullable": true
+          },
+          "setorSolicitante": {
+            "type": "string",
+            "nullable": true
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "ramal": {
+            "type": "string",
+            "nullable": true
+          },
+          "rubrica": {
+            "type": "string",
+            "nullable": true
+          },
+          "danoAvaria": {
+            "type": "string",
+            "nullable": true
+          },
+          "km": {
+            "type": "string",
+            "nullable": true
+          },
+          "fotos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "videos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

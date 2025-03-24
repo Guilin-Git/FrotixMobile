@@ -214,8 +214,8 @@
     <AppxPackagedFile Include="C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixTeste\appsettings.json">
-      <PackagePath>appsettings.json</PackagePath>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixTeste\Resources\Raw\appsettings.json">
+      <PackagePath>Resources\Raw\appsettings.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixTeste\Resources\Images\frotix.png">
       <PackagePath>Resources\Images\frotix.png</PackagePath>
@@ -1310,7 +1310,7 @@
       <PackagePath>wwwroot\FrotixTeste.styles.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixTeste\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\FrotixTeste.bundle.scp.css">
-      <PackagePath>wwwroot\FrotixTeste.3qw9qsns9t.bundle.scp.css</PackagePath>
+      <PackagePath>wwwroot\FrotixTeste.5bftjnkr3n.bundle.scp.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixTeste\Resources\Images\dotnet_bot.svg">
       <PackagePath>Resources\Images\dotnet_bot.svg</PackagePath>
@@ -1320,6 +1320,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixTeste\Components\Layout\NavMenu.razor.css">
       <PackagePath>Components\Layout\NavMenu.razor.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\FrotixMobile\FrotixMobile\FrotixTeste\FrotixTeste\Components\Pages\Vistoria.razor.css">
+      <PackagePath>Components\Pages\Vistoria.razor.css</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
