@@ -1,86 +1,164 @@
-/* Geral */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+
+/* ----- Reset básico ----- */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-label {
-    font-weight: 600;
-    margin-bottom: 4px;
-    display: block;
-    color: #343a40;
+/* ----- Corpo e container principal ----- */
+body {
+    font-family: Arial, sans-serif;
+    /* Caso queira limitar a largura total:
+        max-width: 900px;
+        margin: 0 auto;
+        */
 }
 
-input, select, textarea {
-    border-radius: 6px;
-}
-
-/* Container de cada sessão */
-.form-section {
+.inspection-form {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin: 1rem auto;
+    max-width: 800px; /* Ajuste a largura conforme desejar */
     background-color: #fff;
-    padding: 24px;
-    margin: 16px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+    /* ----- Cabeçalhos ----- */
+    .inspection-form h1 {
+        text-align: center;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #000;
+        padding-bottom: 0.5rem;
+    }
+
+.section-title {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.3rem;
+}
+
+/* ----- Seções e linhas de formulário ----- */
+.section {
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Variante vertical (para textarea / multiline) */
+.form-row-vertical {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    margin-bottom: 1rem;
 }
 
-/* Agrupamento de campos */
-.checkbox-group,
+    /* ----- Rótulos ----- */
+    .form-row label,
+    .form-row-vertical label {
+        width: 150px;
+        font-weight: bold;
+        margin-right: 0.5rem;
+        margin-bottom: 0.25rem; /* Para .form-row-vertical */
+    }
+
+    /* ----- Inputs (Syncfusion) ----- */
+    .form-row .e-input,
+    .form-row .e-input-group.e-control-wrapper .e-input,
+    .form-row .e-checkbox-wrapper,
+    .form-row .e-radio-wrapper,
+    .form-row-vertical .e-input,
+    .form-row-vertical .e-input-group.e-control-wrapper .e-input {
+        flex: 1;
+        min-width: 0;
+    }
+
+/* Ajustes para combos e numeric textboxes */
+.e-input-group.e-control-wrapper,
+.e-float-input.e-control-wrapper {
+    width: 100% !important;
+}
+
+/* Se quiser um visual de borda/padding diferente nos inputs: */
+/*
+    .e-input, .e-input-group.e-control-wrapper .e-input {
+        border-radius: 4px;
+        border: 1px solid #999;
+        padding: 0.35rem;
+    }
+    */
+
+/* ----- Tabela (Setor, Nome, Ramal, KM) ----- */
+.request-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .request-table th {
+        text-align: left;
+        font-weight: bold;
+        padding: 0.5rem;
+        border-bottom: 2px solid #000;
+    }
+
+    .request-table td {
+        padding: 0.5rem;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Força as TextBox da tabela ocuparem 100% na célula */
+    .request-table .e-input-group.e-control-wrapper {
+        width: 100% !important;
+    }
+
+/* ----- Dano/Avaria (multiline) ----- */
+.multiline.e-input {
+    height: 60px; /* Aumente se quiser mais espaço de digitação */
+    resize: none; /* Desabilita o redimensionamento manual */
+}
+
+/* ----- Combustível (radios) ----- */
 .fuel-radios {
     display: flex;
-    gap: 16px;
-    align-items: center;
+    gap: 1rem;
     flex-wrap: wrap;
+    margin-left: 0.5rem;
 }
 
-/* Multiline text */
-textarea.multiline {
-    min-height: 100px;
-    resize: vertical;
+/* Remove label textual do SfCheckBox e SfRadioButton (se quiser),
+       pois já estamos usando fora. Exemplo:
+       .e-checkbox-wrapper .e-label, .e-radio-wrapper .e-label { display: none; }
+    */
+
+/* Ajustes ao label do checkbox/radio se preferir algo mais suave */
+.e-checkbox-wrapper .e-label,
+.e-radio-wrapper .e-label {
+    margin-left: 4px;
+    font-weight: normal;
 }
 
-/* Galerias de mídia */
-.image-gallery,
-.video-gallery {
+.image-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     margin-top: 10px;
 }
 
 .captured-media {
-    object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f9f9f9;
 }
 
-/* Botões */
-.e-btn {
-    margin-top: 10px;
-}
 
-/* Título de seção */
-h4 {
-    margin-top: 20px;
-    color: #555;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 4px;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .form-section {
-        padding: 16px;
-    }
-
-    .checkbox-group,
-    .fuel-radios {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}

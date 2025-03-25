@@ -52,13 +52,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\FrotixTeste.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5bftjnkr3n"},{"Name":"integrity","Value":"sha256-P15SY6g7dz3KMLt6Qe\u002B9ah5UtNQtNfYSak2K3lOl6YY="},{"Name":"label","Value":"FrotixTeste.styles.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7328"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022P15SY6g7dz3KMLt6Qe\u002B9ah5UtNQtNfYSak2K3lOl6YY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 16:48:19 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7328"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022P15SY6g7dz3KMLt6Qe\u002B9ah5UtNQtNfYSak2K3lOl6YY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Mar 2025 15:07:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="FrotixTeste.styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\FrotixTeste.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-P15SY6g7dz3KMLt6Qe\u002B9ah5UtNQtNfYSak2K3lOl6YY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7328"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022P15SY6g7dz3KMLt6Qe\u002B9ah5UtNQtNfYSak2K3lOl6YY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Mar 2025 16:48:19 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7328"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022P15SY6g7dz3KMLt6Qe\u002B9ah5UtNQtNfYSak2K3lOl6YY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Mar 2025 15:07:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="images/frotix.2126syujdp.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\frotix.png'))</AssetFile>

@@ -7,24 +7,28 @@
       "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\services\\vistoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\components\\pages\\vistoria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\pages\\vistoria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\components\\pages\\visualizarvistorias.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\pages\\visualizarvistorias.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\models\\placafields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\models\\placafields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\components\\pages\\vistoria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\pages\\vistoria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\components\\pages\\vistoria.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\components\\pages\\vistoria.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\models\\vistoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\models\\vistoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\models\\placafields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\models\\placafields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|solutionrelative:frotixteste\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8218EF6A-C159-46DE-84A4-29FC59DC2B06}|FrotixTeste\\FrotixTeste.csproj|c:\\users\\user\\desktop\\frotixmobile\\frotixmobile\\frotixteste\\frotixteste\\models\\pontofields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,20 +66,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "VisualizarVistorias.razor",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Pages\\VisualizarVistorias.razor",
+              "RelativeDocumentMoniker": "FrotixTeste\\Components\\Pages\\VisualizarVistorias.razor",
+              "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Pages\\VisualizarVistorias.razor*",
+              "RelativeToolTip": "FrotixTeste\\Components\\Pages\\VisualizarVistorias.razor*",
+              "ViewState": "AgIAAIIBAAAAAAAAAAAAAFsBAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T17:05:40.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "VistoriaModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Models\\VistoriaModel.cs",
               "RelativeDocumentMoniker": "FrotixTeste\\Models\\VistoriaModel.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Models\\VistoriaModel.cs",
               "RelativeToolTip": "FrotixTeste\\Models\\VistoriaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T15:49:50.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\MauiProgram.cs",
               "RelativeDocumentMoniker": "FrotixTeste\\MauiProgram.cs",
@@ -83,8 +100,7 @@
               "RelativeToolTip": "FrotixTeste\\MauiProgram.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAqwCkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T15:18:29.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T15:18:29.735Z"
             },
             {
               "$type": "Document",
@@ -94,7 +110,7 @@
               "RelativeDocumentMoniker": "FrotixTeste\\Components\\Pages\\Vistoria.razor.css",
               "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Pages\\Vistoria.razor.css",
               "RelativeToolTip": "FrotixTeste\\Components\\Pages\\Vistoria.razor.css",
-              "ViewState": "AgIAADYAAAAAAAAAAAAIwEAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwKQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-03-24T14:27:07.481Z",
               "EditorCaption": ""
@@ -107,27 +123,27 @@
               "RelativeDocumentMoniker": "FrotixTeste\\Services\\VistoriaService.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Services\\VistoriaService.cs",
               "RelativeToolTip": "FrotixTeste\\Services\\VistoriaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T13:49:23.605Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Vistoria.razor",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Pages\\Vistoria.razor",
               "RelativeDocumentMoniker": "FrotixTeste\\Components\\Pages\\Vistoria.razor",
               "ToolTip": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Components\\Pages\\Vistoria.razor",
               "RelativeToolTip": "FrotixTeste\\Components\\Pages\\Vistoria.razor",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAIEAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-24T13:43:41.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PontoFields.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Models\\PontoFields.cs",
               "RelativeDocumentMoniker": "FrotixTeste\\Models\\PontoFields.cs",
@@ -135,12 +151,11 @@
               "RelativeToolTip": "FrotixTeste\\Models\\PontoFields.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T13:38:08.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T13:38:08.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "PlacaFields.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Models\\PlacaFields.cs",
               "RelativeDocumentMoniker": "FrotixTeste\\Models\\PlacaFields.cs",
@@ -148,12 +163,11 @@
               "RelativeToolTip": "FrotixTeste\\Models\\PlacaFields.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T13:38:07.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T13:38:07.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MotoristaFields.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\Models\\MotoristaFields.cs",
               "RelativeDocumentMoniker": "FrotixTeste\\Models\\MotoristaFields.cs",
@@ -161,8 +175,7 @@
               "RelativeToolTip": "FrotixTeste\\Models\\MotoristaFields.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T13:37:51.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T13:37:51.102Z"
             }
           ]
         }

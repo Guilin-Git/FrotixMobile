@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M1TZf0txmMdWGGpn32StVk5vP/mxwwc9fMoD3K16lHg=",
+  "Hash": "2NO70C1dxR7il63NjFdZIPbQnDYYBRSYTMW+JAM208k=",
   "Source": "FrotixTeste",
   "BasePath": "/",
   "Mode": "Root",
@@ -2887,8 +2887,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "5bftjnkr3n",
-      "Integrity": "P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=",
+      "Fingerprint": "d2tkvg5jfa",
+      "Integrity": "JZ+UPlKTrrU65mk0HBoGyLHNgzEdwHg9BozU6ATBUKQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\FrotixTeste.styles.css"
@@ -2908,8 +2908,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "5bftjnkr3n",
-      "Integrity": "P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=",
+      "Fingerprint": "d2tkvg5jfa",
+      "Integrity": "JZ+UPlKTrrU65mk0HBoGyLHNgzEdwHg9BozU6ATBUKQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\FrotixTeste.bundle.scp.css"
@@ -14523,96 +14523,6 @@
       ]
     },
     {
-      "Route": "FrotixTeste.5bftjnkr3n.bundle.scp.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\FrotixTeste.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7328"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 16:48:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5bftjnkr3n"
-        },
-        {
-          "Name": "label",
-          "Value": "FrotixTeste.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY="
-        }
-      ]
-    },
-    {
-      "Route": "FrotixTeste.5bftjnkr3n.styles.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\FrotixTeste.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7328"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 16:48:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5bftjnkr3n"
-        },
-        {
-          "Name": "label",
-          "Value": "FrotixTeste.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY="
-        }
-      ]
-    },
-    {
       "Route": "FrotixTeste.bundle.scp.css",
       "AssetFile": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\FrotixTeste.bundle.scp.css",
       "Selectors": [],
@@ -14623,7 +14533,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7328"
+          "Value": "9868"
         },
         {
           "Name": "Content-Type",
@@ -14631,11 +14541,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=\""
+          "Value": "\"JZ+UPlKTrrU65mk0HBoGyLHNgzEdwHg9BozU6ATBUKQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 16:48:18 GMT"
+          "Value": "Tue, 25 Mar 2025 16:24:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14645,7 +14555,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY="
+          "Value": "sha256-JZ+UPlKTrrU65mk0HBoGyLHNgzEdwHg9BozU6ATBUKQ="
+        }
+      ]
+    },
+    {
+      "Route": "FrotixTeste.d2tkvg5jfa.bundle.scp.css",
+      "AssetFile": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\FrotixTeste.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JZ+UPlKTrrU65mk0HBoGyLHNgzEdwHg9BozU6ATBUKQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 16:24:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d2tkvg5jfa"
+        },
+        {
+          "Name": "label",
+          "Value": "FrotixTeste.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JZ+UPlKTrrU65mk0HBoGyLHNgzEdwHg9BozU6ATBUKQ="
+        }
+      ]
+    },
+    {
+      "Route": "FrotixTeste.d2tkvg5jfa.styles.css",
+      "AssetFile": "C:\\Users\\User\\Desktop\\FrotixMobile\\FrotixMobile\\FrotixTeste\\FrotixTeste\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\FrotixTeste.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JZ+UPlKTrrU65mk0HBoGyLHNgzEdwHg9BozU6ATBUKQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 16:24:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d2tkvg5jfa"
+        },
+        {
+          "Name": "label",
+          "Value": "FrotixTeste.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JZ+UPlKTrrU65mk0HBoGyLHNgzEdwHg9BozU6ATBUKQ="
         }
       ]
     },
@@ -14660,7 +14660,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7328"
+          "Value": "9868"
         },
         {
           "Name": "Content-Type",
@@ -14668,11 +14668,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY=\""
+          "Value": "\"JZ+UPlKTrrU65mk0HBoGyLHNgzEdwHg9BozU6ATBUKQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Mar 2025 16:48:18 GMT"
+          "Value": "Tue, 25 Mar 2025 16:24:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14682,7 +14682,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-P15SY6g7dz3KMLt6Qe+9ah5UtNQtNfYSak2K3lOl6YY="
+          "Value": "sha256-JZ+UPlKTrrU65mk0HBoGyLHNgzEdwHg9BozU6ATBUKQ="
         }
       ]
     },

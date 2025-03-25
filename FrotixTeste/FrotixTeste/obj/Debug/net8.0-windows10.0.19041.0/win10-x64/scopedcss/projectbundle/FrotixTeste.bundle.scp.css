@@ -183,89 +183,167 @@ main[b-s2et7f6a20] {
     margin-top: -5px;
 }
 /* /Components/Pages/Vistoria.razor.rz.scp.css */
-/* Geral */
-body[b-rnnxihrxod] {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+
+/* ----- Reset b�sico ----- */
+*[b-rnnxihrxod] {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-label[b-rnnxihrxod] {
-    font-weight: 600;
-    margin-bottom: 4px;
-    display: block;
-    color: #343a40;
+/* ----- Corpo e container principal ----- */
+body[b-rnnxihrxod] {
+    font-family: Arial, sans-serif;
+    /* Caso queira limitar a largura total:
+        max-width: 900px;
+        margin: 0 auto;
+        */
 }
 
-input[b-rnnxihrxod], select[b-rnnxihrxod], textarea[b-rnnxihrxod] {
-    border-radius: 6px;
-}
-
-/* Container de cada sess�o */
-.form-section[b-rnnxihrxod] {
+.inspection-form[b-rnnxihrxod] {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin: 1rem auto;
+    max-width: 800px; /* Ajuste a largura conforme desejar */
     background-color: #fff;
-    padding: 24px;
-    margin: 16px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+    /* ----- Cabe�alhos ----- */
+    .inspection-form h1[b-rnnxihrxod] {
+        text-align: center;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #000;
+        padding-bottom: 0.5rem;
+    }
+
+.section-title[b-rnnxihrxod] {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.3rem;
+}
+
+/* ----- Se��es e linhas de formul�rio ----- */
+.section[b-rnnxihrxod] {
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+}
+
+.form-row[b-rnnxihrxod] {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Variante vertical (para textarea / multiline) */
+.form-row-vertical[b-rnnxihrxod] {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    margin-bottom: 1rem;
 }
 
-/* Agrupamento de campos */
-.checkbox-group[b-rnnxihrxod],
+    /* ----- R�tulos ----- */
+    .form-row label[b-rnnxihrxod],
+    .form-row-vertical label[b-rnnxihrxod] {
+        width: 150px;
+        font-weight: bold;
+        margin-right: 0.5rem;
+        margin-bottom: 0.25rem; /* Para .form-row-vertical */
+    }
+
+    /* ----- Inputs (Syncfusion) ----- */
+    .form-row .e-input[b-rnnxihrxod],
+    .form-row .e-input-group.e-control-wrapper .e-input[b-rnnxihrxod],
+    .form-row .e-checkbox-wrapper[b-rnnxihrxod],
+    .form-row .e-radio-wrapper[b-rnnxihrxod],
+    .form-row-vertical .e-input[b-rnnxihrxod],
+    .form-row-vertical .e-input-group.e-control-wrapper .e-input[b-rnnxihrxod] {
+        flex: 1;
+        min-width: 0;
+    }
+
+/* Ajustes para combos e numeric textboxes */
+.e-input-group.e-control-wrapper[b-rnnxihrxod],
+.e-float-input.e-control-wrapper[b-rnnxihrxod] {
+    width: 100% !important;
+}
+
+/* Se quiser um visual de borda/padding diferente nos inputs: */
+/*
+    .e-input, .e-input-group.e-control-wrapper .e-input {
+        border-radius: 4px;
+        border: 1px solid #999;
+        padding: 0.35rem;
+    }
+    */
+
+/* ----- Tabela (Setor, Nome, Ramal, KM) ----- */
+.request-table[b-rnnxihrxod] {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .request-table th[b-rnnxihrxod] {
+        text-align: left;
+        font-weight: bold;
+        padding: 0.5rem;
+        border-bottom: 2px solid #000;
+    }
+
+    .request-table td[b-rnnxihrxod] {
+        padding: 0.5rem;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* For�a as TextBox da tabela ocuparem 100% na c�lula */
+    .request-table .e-input-group.e-control-wrapper[b-rnnxihrxod] {
+        width: 100% !important;
+    }
+
+/* ----- Dano/Avaria (multiline) ----- */
+.multiline.e-input[b-rnnxihrxod] {
+    height: 60px; /* Aumente se quiser mais espa�o de digita��o */
+    resize: none; /* Desabilita o redimensionamento manual */
+}
+
+/* ----- Combust�vel (radios) ----- */
 .fuel-radios[b-rnnxihrxod] {
     display: flex;
-    gap: 16px;
-    align-items: center;
+    gap: 1rem;
     flex-wrap: wrap;
+    margin-left: 0.5rem;
 }
 
-/* Multiline text */
-textarea.multiline[b-rnnxihrxod] {
-    min-height: 100px;
-    resize: vertical;
+/* Remove label textual do SfCheckBox e SfRadioButton (se quiser),
+       pois j� estamos usando fora. Exemplo:
+       .e-checkbox-wrapper .e-label, .e-radio-wrapper .e-label { display: none; }
+    */
+
+/* Ajustes ao label do checkbox/radio se preferir algo mais suave */
+.e-checkbox-wrapper .e-label[b-rnnxihrxod],
+.e-radio-wrapper .e-label[b-rnnxihrxod] {
+    margin-left: 4px;
+    font-weight: normal;
 }
 
-/* Galerias de m�dia */
-.image-gallery[b-rnnxihrxod],
-.video-gallery[b-rnnxihrxod] {
+.image-gallery[b-rnnxihrxod] {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     margin-top: 10px;
 }
 
 .captured-media[b-rnnxihrxod] {
-    object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f9f9f9;
 }
 
-/* Bot�es */
-.e-btn[b-rnnxihrxod] {
-    margin-top: 10px;
-}
 
-/* T�tulo de se��o */
-h4[b-rnnxihrxod] {
-    margin-top: 20px;
-    color: #555;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 4px;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .form-section[b-rnnxihrxod] {
-        padding: 16px;
-    }
-
-    .checkbox-group[b-rnnxihrxod],
-    .fuel-radios[b-rnnxihrxod] {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}

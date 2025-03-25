@@ -7,6 +7,8 @@ namespace FrotixTeste.Services
     {
         private readonly HttpClient _http;
 
+        private const string BaseUrl = "Vistorias";
+
         public VistoriaService(HttpClient http)
         {
             _http = http;
@@ -50,7 +52,7 @@ namespace FrotixTeste.Services
         {
             try
             {
-                var response = await _http.PutAsJsonAsync($"{vistoria.Id}", vistoria);
+                var response = await _http.PutAsJsonAsync($"{BaseUrl}/{vistoria.Id}", vistoria);
                 return response.IsSuccessStatusCode;
             }
             catch (Exception ex)
@@ -64,7 +66,7 @@ namespace FrotixTeste.Services
         {
             try
             {
-                var response = await _http.DeleteAsync($"{id}");
+                var response = await _http.DeleteAsync($"{BaseUrl}/{id}");
                 return response.IsSuccessStatusCode;
             }
             catch (Exception ex)
